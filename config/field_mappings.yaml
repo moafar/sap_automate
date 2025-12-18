@@ -1,0 +1,628 @@
+fields:
+  '%_S_AUTNR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_AUTNR_%_APP_%-TEXT
+    text: Autorització 1
+    tooltip: ''
+    type: GuiTextField
+  '%_S_AUTNR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_AUTNR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_CENTRE_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_CENTRE_%_APP_%-TEXT
+    text: Codi centre sanitari del IDI
+    tooltip: ''
+    type: GuiTextField
+  '%_S_CENTRE_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_CENTRE_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_COD_GE_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_COD_GE_%_APP_%-TEXT
+    text: Codi genérica
+    tooltip: ''
+    type: GuiTextField
+  '%_S_COD_GE_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_COD_GE_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_COD_PR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_COD_PR_%_APP_%-TEXT
+    text: Codi de l’assaig/estudi
+    tooltip: ''
+    type: GuiTextField
+  '%_S_COD_PR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_COD_PR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_ENTIT_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_ENTIT_%_APP_%-TEXT
+    text: Entitat sol•licitant
+    tooltip: ''
+    type: GuiTextField
+  '%_S_ENTIT_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_ENTIT_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_FRAGE_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_FRAGE_%_APP_%-TEXT
+    text: Autorització 2
+    tooltip: ''
+    type: GuiTextField
+  '%_S_FRAGE_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_FRAGE_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_GJAHR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_GJAHR_%_APP_%-TEXT
+    text: Any període facturació
+    tooltip: ''
+    type: GuiTextField
+  '%_S_GJAHR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_GJAHR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_HOSP_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_HOSP_%_APP_%-TEXT
+    text: Hospital
+    tooltip: ''
+    type: GuiTextField
+  '%_S_HOSP_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_HOSP_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_IENDT_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_IENDT_%_APP_%-TEXT
+    text: Data final realització prestac
+    tooltip: ''
+    type: GuiTextField
+  '%_S_IENDT_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_IENDT_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_KTOKD_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_KTOKD_%_APP_%-TEXT
+    text: Grup de clients
+    tooltip: ''
+    type: GuiTextField
+  '%_S_KTOKD_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_KTOKD_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_KUNNR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_KUNNR_%_APP_%-TEXT
+    text: Client
+    tooltip: ''
+    type: GuiTextField
+  '%_S_KUNNR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_KUNNR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_LNRLS_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_LNRLS_%_APP_%-TEXT
+    text: Num. activitat
+    tooltip: ''
+    type: GuiTextField
+  '%_S_LNRLS_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_LNRLS_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_MATNR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_MATNR_%_APP_%-TEXT
+    text: Codi concepte facturable
+    tooltip: ''
+    type: GuiTextField
+  '%_S_MATNR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_MATNR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_MES_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_MES_%_APP_%-TEXT
+    text: Mes període facturació
+    tooltip: ''
+    type: GuiTextField
+  '%_S_MES_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_MES_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_NO_F_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_NO_F_%_APP_%-TEXT
+    text: Facturables/no facturables
+    tooltip: ''
+    type: GuiTextField
+  '%_S_NO_F_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_NO_F_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_NUM_F_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_NUM_F_%_APP_%-TEXT
+    text: Núm. factura
+    tooltip: ''
+    type: GuiTextField
+  '%_S_NUM_F_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_NUM_F_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_ORGZU_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_ORGZU_%_APP_%-TEXT
+    text: UP solicitant
+    tooltip: ''
+    type: GuiTextField
+  '%_S_ORGZU_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_ORGZU_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PASSNR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PASSNR_%_APP_%-TEXT
+    text: DNI/NIE pacient
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PASSNR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PASSNR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PATNR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PATNR_%_APP_%-TEXT
+    text: Núm. Hist. Clínica pacient
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PATNR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PATNR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PBGDT_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PBGDT_%_APP_%-TEXT
+    text: Data inici realització prestac
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PBGDT_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PBGDT_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_POBNR_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_POBNR_%_APP_%-TEXT
+    text: Codi d’agenda
+    tooltip: ''
+    type: GuiTextField
+  '%_S_POBNR_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_POBNR_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PRE_F_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PRE_F_%_APP_%-TEXT
+    text: Núm. prefactura
+    tooltip: ''
+    type: GuiTextField
+  '%_S_PRE_F_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_PRE_F_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_STATUS_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_STATUS_%_APP_%-TEXT
+    text: Status
+    tooltip: ''
+    type: GuiTextField
+  '%_S_STATUS_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_STATUS_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_TIP_EX_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_TIP_EX_%_APP_%-TEXT
+    text: Tipus d’exploració
+    tooltip: ''
+    type: GuiTextField
+  '%_S_TIP_EX_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_TIP_EX_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_UT_FAC_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_UT_FAC_%_APP_%-TEXT
+    text: UT de facturació (CECO)
+    tooltip: ''
+    type: GuiTextField
+  '%_S_UT_FAC_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_UT_FAC_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  '%_S_UT_REA_%_APP_%-TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_UT_REA_%_APP_%-TEXT
+    text: UT realitzador
+    tooltip: ''
+    type: GuiTextField
+  '%_S_UT_REA_%_APP_%-TO_TEXT':
+    changeable: false
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txt%_S_UT_REA_%_APP_%-TO_TEXT
+    text: Fins
+    tooltip: ''
+    type: GuiTextField
+  S_AUTNR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_AUTNR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_AUTNR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_AUTNR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_CENTRE-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_CENTRE-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_CENTRE-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_CENTRE-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_COD_GE-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_COD_GE-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_COD_GE-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_COD_GE-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_COD_PR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_COD_PR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_COD_PR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_COD_PR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_ENTIT-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_ENTIT-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_ENTIT-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_ENTIT-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_FRAGE-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_FRAGE-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_FRAGE-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_FRAGE-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_GJAHR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_GJAHR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_GJAHR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_GJAHR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_HOSP-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_HOSP-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_HOSP-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_HOSP-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_IENDT-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_IENDT-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_IENDT-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_IENDT-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_KTOKD-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_KTOKD-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_KTOKD-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_KTOKD-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_KUNNR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_KUNNR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_KUNNR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_KUNNR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_LNRLS-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_LNRLS-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_LNRLS-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_LNRLS-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_MATNR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_MATNR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_MATNR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_MATNR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_MES-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_MES-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_MES-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_MES-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_NO_F-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_NO_F-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_NO_F-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_NO_F-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_NUM_F-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_NUM_F-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_NUM_F-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_NUM_F-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_ORGZU-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_ORGZU-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_ORGZU-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_ORGZU-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_PASSNR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_PASSNR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_PASSNR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_PASSNR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_PATNR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_PATNR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_PATNR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_PATNR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_PBGDT-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_PBGDT-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_PBGDT-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_PBGDT-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_POBNR-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_POBNR-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_POBNR-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_POBNR-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_PRE_F-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_PRE_F-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_PRE_F-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/txtS_PRE_F-LOW
+    text: ''
+    tooltip: ''
+    type: GuiTextField
+  S_STATUS-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_STATUS-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_STATUS-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_STATUS-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_TIP_EX-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_TIP_EX-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_TIP_EX-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_TIP_EX-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_UT_FAC-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_UT_FAC-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_UT_FAC-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_UT_FAC-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_UT_REA-HIGH:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_UT_REA-HIGH
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+  S_UT_REA-LOW:
+    changeable: true
+    id: /app/con[0]/ses[0]/wnd[0]/usr/ctxtS_UT_REA-LOW
+    text: ''
+    tooltip: ''
+    type: GuiCTextField
+metadata:
+  generated_at: '2025-11-28T08:34:07.059656'
+  total_fields: 104

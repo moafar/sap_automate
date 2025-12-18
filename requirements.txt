@@ -1,0 +1,13 @@
+pywin32
+pyyaml
+python-dotenv
+keyring
+pandas
+openpyxl
+tqdm
+numpy
+
+# Documentation
+mkdocs>=1.5.3
+mkdocs-material>=9.5.0
+pymdown-extensions>=10.7

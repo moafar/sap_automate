@@ -1,0 +1,840 @@
+Codi,Centre de cost
+00,IDI General
+0000,IDI General
+000000,IDI General
+00000000,IDI General
+0000000000,IDI General Genèric
+01,IDI Consell Administració
+0100,Consell Administració 
+010000,Consell Administració
+01000000,Consell Administració
+0100000000,Consell Administració Genèric
+10,IDI S Corporatius
+1000,IDI S Corporatius
+100000,IDI S Corporatius
+10000000,IDI S Corporatius Genèric
+1000000000,IDI S Corporatius Genèric
+1000000C,IDI S Corporatius Gestió del Coneixement
+10009100,IDI S Corporatius Gestió del Coneixement
+1000000C00,IDI S Corporatius Formació Genèric
+1000910001,IDI S Corporatius Gestió del Coneixement Genèric
+1000000R,IDI S Corporatius Recerca i Innovació
+10009200,IDI S Corporatius Recerca i Innovació
+1000000R00,IDI S Corporatius Recerca Genèric
+1000920001,IDI S Corporatius Recerca Genèric
+1001,Gerència
+100100,Gerència
+10010000,Gerència
+1001000000,Gerència Genèric
+1002,DRE
+100200,DRE
+10020000,DRE
+1002000000,DRE Genèric
+1002000001,DRE Aprovisionaments i logística
+1002000002,DRE Control de gestió
+1002000003,DRE Facturació
+1002000004,DRE Gestió econòmica
+1002000005,DRE Contractació i processos electrònics
+1003,DPiRL
+100300,DPiRL
+10030000,DPiRL
+1003000000,DPiRL Genèric
+1003000001,DPiRL Gestió de persones
+1003000002,DPiRL Gestió del coneixement
+1003000003,DPiRL Prevenció i riscos laborals
+1004,DPO
+100400,DPO
+10040000,DPO
+1004000000,DPO Genèric
+1004000001,DPO Gestió de projectes
+1004000002,DPO Seguiment i resultats
+1004000003,DPO Protecció radiològica
+1005,DTiS
+100500,DTiS
+10050000,DTiS
+1005000000,DTiS Genèric
+1005000001,DTiS Aplicacions
+1005000002,DTiS Suport
+1005000003,DTiS Xarxes i sistemes
+1006,DSG
+100600,DSG
+10060000,DSG
+1006000000,DSG Genèric
+1020,Secretaria tècnica i comunicació
+102000,Secretaria tècnica i comunicació
+10200000,Secretaria tècnica i comunicació
+1020000000,Secretaria tècnica i comunicació Genèric
+1021,Recerca i innovació
+102100,Recerca i innovació
+10210000,Recerca i innovació
+1021000000,Recerca i innovació Genèric
+1021000001,Recerca i innovació suport metodològic
+1022,Assessoria jurídica
+102200,Assessoria jurídica
+10220000,Assessoria jurídica
+1022000000,Assessoria jurídica Genèric
+11,IDI Direccions Clíniques
+1100,IDI Direccions Clíniques
+110000,IDI Direccions Clíniques Genèric
+11000000,IDI Direccions Clíniques Genèric
+1100000000,IDI Direccions Clíniques Genèric
+1101,IDI Vall Hebron
+110100,IDI Vall Hebron Genèric
+11010000,IDI Vall Hebron Genèric
+1101000000,IDI Vall Hebron Genèric
+1101000001,IDI Vall Hebron Direcció clínica
+1101000002,IDI Vall Hebron Altres activitats
+1101000003,IDI Vall Hebron At. continuada
+1101000C,IDI Vall Hebron Gestió del Coneixement
+11019100,IDI Vall Hebron Gestió del Coneixement
+1101000C00,IDI Vall Hebron Formació Genèric
+1101910001,IDI Vall Hebron Gestió del Coneixement Genèric
+1101000F,IDI Vall Hebron Facultatius
+11019300,IDI Vall Hebron Facultatius
+1101000F01,IDI Vall Hebron Facultatius RX
+1101930001,IDI Vall Hebron Facultatius RX
+1101000F30,IDI Vall Hebron Facultatius MN
+1101930002,IDI Vall Hebron Facultatius MN
+1101000F60,IDI Vall Hebron Facultatius IN
+1101930003,IDI Vall Hebron Facultatius IN
+1101000R,IDI Vall Hebron Recerca i Innovació
+11019200,IDI Vall Hebron Recerca i Innovació
+1101000R00,IDI Vall Hebron Recerca Genèric
+1101920001,IDI Vall Hebron Recerca Genèric
+110101,IDI HVH General
+11010100,IDI HVH General Genèric
+1101010000,IDI HVH General Genèric
+11010101,IDI HVH General RM
+1101010100,IDI HVH General RM - Genèric
+1101010101,IDI HVH General RM - 1
+1101010102,IDI HVH General RM - 2
+1101010103,IDI HVH General RM - VI
+1101010198,IDI HVH General RM - TD
+1101010199,IDI HVH General RM - Externs
+11010102,IDI HVH General TC
+1101010200,IDI HVH General TC - Genèric
+1101010201,IDI HVH General TC - SC1
+1101010202,IDI HVH General TC - SC2
+1101010203,IDI HVH General TC - SC3
+1101010204,IDI HVH General TC - SC4
+1101010205,IDI HVH General TC - Urgències
+1101010206,IDI HVH General TC - SC7
+1101010207,IDI HVH General TC - CP
+1101010298,IDI HVH General TC - TD
+1101010299,IDI HVH General TC - Externs
+11010103,IDI HVH General MN
+1101010300,IDI HVH General MN - Genèric
+1101010301,IDI HVH General MN - Densit.
+1101010302,IDI HVH General MN - γ càmera 1
+1101010303,IDI HVH General MN - γ càmera 2
+1101010304,IDI HVH General MN - γ càmera 3
+1101010305,IDI HVH General MN - γ càmera 4
+11010104,IDI HVH General PET
+1101010400,IDI HVH General PET - Genèric
+1101010401,IDI HVH General PET - PET-TC
+1101010402,IDI HVH General PET - PET-TC-VI
+11010105,IDI HVH General UTM
+1101010500,IDI HVH General UTM - Genèric
+1101010501,IDI HVH General UTM - S. Tractament 1
+1101010502,IDI HVH General UTM - S. Tractament 2
+1101010503,IDI HVH General UTM - S. Tractament 3
+11010106,IDI HVH General ANGIO
+1101010600,IDI HVH General ANGIO - Genèric
+1101010601,IDI HVH General ANGIO - 1
+1101010602,IDI HVH General ANGIO - Recov.
+1101010603,IDI HVH General ANGIO - 2
+1101010604,IDI HVH General ANGIO - 3 TCG2
+11010107,IDI HVH General RX
+11010108,IDI HVH General ECO
+11010109,IDI HVH General RADIOFARMÀCIA
+1101010900,IDI HVH General RadioFar - Genèric
+110102,IDI HVH Trauma
+11010200,IDI HVH Trauma Genèric
+1101020000,IDI HVH Trauma Genèric
+11010201,IDI HVH Trauma RM
+1101020100,IDI HVH Trauma RM - Genèric
+1101020101,IDI HVH Trauma RM - 5
+1101020198,IDI HVH Trauma RM - TD
+1101020199,IDI HVH Trauma RM - Externs
+11010202,IDI HVH Trauma TC
+1101020200,IDI HVH Trauma TC - Genèric
+1101020201,IDI HVH Trauma TC - SC5
+1101020202,IDI HVH Trauma TC - VI
+1101020203,IDI HVH Trauma TC  - Urg
+1101020298,IDI HVH Trauma TC - TD
+1101020299,IDI HVH Trauma TC - Externs
+11010203,IDI HVH Trauma MN
+11010204,IDI HVH Trauma PET
+11010205,IDI HVH Trauma UTM
+11010206,IDI HVH Trauma ANGIO
+11010207,IDI HVH Trauma RX
+11010208,IDI HVH Trauma ECO
+110103,IDI HVH MI
+11010300,IDI HVH MI Genèric
+1101030000,IDI HVH MI Genèric
+11010301,IDI HVH MI RM
+1101030100,IDI HVH MI RM - Genèric
+1101030101,IDI HVH MI RM - 3
+1101030102,IDI HVH MI RM - 4
+1101030198,IDI HVH MI RM - TD
+1101030199,IDI HVH MI RM - Externs
+11010302,IDI HVH MI TC
+1101030200,IDI HVH MI TC - Genèric
+1101030201,IDI HVH MI TC - SC6
+1101030298,IDI HVH MI TC - TD
+1101030299,IDI HVH MI TC - Externs
+11010303,IDI HVH MI MN
+11010304,IDI HVH MI PET
+11010305,IDI HVH MI UTM
+11010306,IDI HVH MI ANGIO
+11010307,IDI HVH MI RX
+11010308,IDI HVH MI ECO
+1102,IDI MetroNord 
+110200,IDI MetroNord Genèric
+11020000,IDI MetroNord Genèric
+1102000000,IDI MetroNord Genèric
+1102000001,IDI MetroNord Direcció clínica
+1102000002,IDI MetroNord Altres activitats
+1102000003,IDI MetroNord At. continuada
+1102000C,IDI MetroNord Gestió del Coneixement
+11029100,IDI MetroNord Gestió del Coneixement
+1102000C00,IDI MetroNord Formació Genèric
+1102910001,IDI MetroNord Gestió del Coneixement Genèric
+1102000F,IDI MetroNord Facultatius
+11029300,IDI MetroNord Facultatius
+1102000F01,IDI MetroNord Facultatius RX
+1102930001,IDI MetroNord Facultatius RX
+1102000F30,IDI MetroNord Facultatius MN
+1102930002,IDI MetroNord Facultatius MN
+1102000R,IDI MetroNord Recerca i Innovació
+11029200,IDI MetroNord Recerca i Innovació
+1102000R00,IDI MetroNord Recerca Genèric
+1102920001,IDI MetroNord Recerca Genèric
+110201,IDI MetroNord HUGTiP
+11020100,IDI MetroNord HUGTiP Genèric
+1102010000,IDI MetroNord HUGTiP Genèric
+11020101,IDI MetroNord HUGTiP RM
+1102010100,IDI MetroNord HUGTiP RM - Genèric
+1102010101,IDI MetroNord HUGTiP RM - 1
+1102010102,IDI MetroNord HUGTiP RM - 2
+1102010108,IDI MetroNord HUGTiP RM - TD
+11020102,IDI MetroNord HUGTiP TC
+11020103,IDI MetroNord HUGTiP MN
+1102010300,IDI MetroNord HUGTiP MN - Genèric
+1102010301,IDI MetroNord HUGTiP MN - SPECT-TC
+11020104,IDI MetroNord HUGTiP PET 
+1102010400,IDI MetroNord HUGTiP PET - Genèric
+1102010401,IDI MetroNord HUGTiP PET - TC
+11020105,IDI MetroNord HUGTiP UTM
+11020106,IDI MetroNord HUGTiP ANGIO
+11020107,IDI MetroNord HUGTiP RX
+11020108,IDI MetroNord HUGTiP ECO
+11020109,IDI MetroNord HUGTiP RADIOFARMÀCIA
+1102010900,IDI MetroNord HUGTiP RadioFar - Genèric
+1103,IDI MetroSud
+110300,IDI MetroSud Genèric
+11030000,IDI MetroSud Genèric
+1103000000,IDI MetroSud Genèric
+1103000001,IDI MetroSud Direcció clínica
+1103000002,IDI MetroSud Altres activitats
+1103000003,IDI MetroSud At. continuada
+1103000C,IDI MetroSud Gestió del Coneixement
+11039100,IDI MetroSud Gestió del Coneixement
+1103000C00,IDI MetroSud Formació Genèric
+1103910001,IDI MetroSud Gestió del Coneixement Genèric
+1103000F,IDI MetroSud Facultatius
+11039300,IDI MetroSud Facultatius
+1103000F01,IDI MetroSud Facultatius RX
+1103930001,IDI MetroSud Facultatius RX
+1103000F30,IDI MetroSud Facultatius MN
+1103930002,IDI MetroSud Facultatius MN
+1103000R,IDI MetroSud Recerca i Innovació
+11039200,IDI MetroSud Recerca i Innovació
+1103000R00,IDI MetroSud Recerca Genèric
+1103920001,IDI MetroSud Recerca Genèric
+110301,IDI MetroSud HUB
+11030100,IDI MetroSud HUB Genèric
+1103010000,IDI MetroSud HUB Genèric
+11030101,IDI MetroSud HUB RM
+1103010100,IDI MetroSud HUB RM - Genèric
+1103010101,IDI MetroSud HUB RM - 1
+1103010108,IDI MetroSud HUB RM - TD
+11030102,IDI MetroSud HUB TC
+1103010200,IDI MetroSud HUB TC - Genèric
+1103010201,IDI MetroSud HUB TC - ICS 1 IDI
+1103010202,IDI MetroSud HUB TC - ICS 2
+1103010203,IDI MetroSud HUB TC - ICS 1 PF
+1103010204,IDI MetroSud HUB TC - ICS 1 Neu
+1103010205,IDI MetroSud HUB TC - ICS 3
+1103010206,IDI MetroSud HUB TC - ICS 4
+1103010208,IDI MetroSud HUB TC - TD
+11030103,IDI MetroSud HUB MN
+1103010300,IDI MetroSud HUB MN  - Genèric
+1103010301,IDI MetroSud HUB MN - Laboratori
+1103010302,IDI MetroSud HUB MN - γ càmera 2
+1103010303,IDI MetroSud HUB MN - γ càmera 3
+1103010304,IDI MetroSud HUB MN - γ càmera 4
+1103010305,IDI MetroSud HUB MN - SPECT-TC
+11030104,IDI MetroSud HUB PET
+1103010400,IDI MetroSud HUB PET - Genèric
+1103010401,IDI MetroSud HUB PET - 1
+1103010402,IDI MetroSud HUB PET - 2
+1103010403,IDI MetroSud HUB PET - VI
+11030105,IDI MetroSud HUB UTM
+1103010500,IDI MetroSud HUB UTM - Genèric
+1103010501,IDI MetroSud HUB UTM - S. Tractament 1
+11030106,IDI MetroSud HUB ANGIO
+11030107,IDI MetroSud HUB RX CONVENCIONAL
+11030108,IDI MetroSud HUB ECO
+11030109,IDI MetroSud HUB RADIOFARMÀCIA
+1103010900,IDI MetroSud HUB RadioFar - Genèric
+110302,IDI MetroSud HDiR
+11030200,IDI MetroSud HDiR Genèric
+1103020000,IDI MetroSud HDiR Genèric
+11030201,IDI MetroSud HDiR RM
+1103020100,IDI MetroSud HDiR RM - Genèric
+1103020101,IDI MetroSud HDiR RM - 1
+1103020102,IDI MetroSud HDiR RM - 2
+1103020108,IDI MetroSud HDiR RM - TD
+11030202,IDI MetroSud HDiR TC
+1103020200,IDI MetroSud HDiR TC - Genèric
+1103020201,IDI MetroSud HDiR TC - 1
+1103020202,IDI MetroSud HDiR TC - 2
+1103020208,IDI MetroSud HDiR TC - TD
+11030203,IDI MetroSud HDiR MN
+11030204,IDI MetroSud HDiR PET
+1103020400,IDI MetroSud HDiR PET - Genèric
+11030205,IDI MetroSud HDiR UTM
+11030206,IDI MetroSud HDiR ANGIO
+11030207,IDI MetroSud HDiR RX
+11030208,IDI MetroSud HDiR ECO
+11030209,IDI MetroSud HDiR RADIOFARMÀCIA
+110303,IDI MetroSud HV
+11030300,IDI MetroSud HV Genèric
+1103030000,IDI MetroSud HV Genèric
+11030301,IDI MetroSud HV RM
+1103030100,IDI MetroSud HV RM - Genèric
+1103030101,IDI MetroSud HV RM - 1
+1103030108,IDI MetroSud HV RM - TD
+11030302,IDI MetroSud HV TC
+1103030200,IDI MetroSud HV TC - Genèric
+1103030201,IDI MetroSud HV TC - 1
+1103030208,IDI MetroSud HV TC - TD
+11030303,IDI MetroSud HV MN
+11030304,IDI MetroSud HV PET
+11030305,IDI MetroSud HV UTM
+11030306,IDI MetroSud HV ANGIO
+11030307,IDI MetroSud HV RX
+11030308,IDI MetroSud HV ECO
+11030309,IDI MetroSud HV RADIOFARMÀCIA
+1104,IDI Barcelona
+110400,IDI Barcelona Genèric
+11040000,IDI Barcelona Genèric
+1104000000,IDI Barcelona Genèric
+1104000001,IDI Barcelona Direcció clínica
+1104000002,IDI Barcelona Altres activitats
+1104000003,IDI Barcelona At. continuada
+1104000C,IDI Barcelona Gestió del Coneixement
+11049100,IDI Barcelona Gestió del Coneixement
+1104000C00,IDI Barcelona Formació Genèric
+1104910001,IDI Barcelona Gestió del Coneixement Genèric
+1104000F,IDI Barcelona Facultatius
+11049300,IDI Barcelona Facultatius
+1104000F01,IDI Barcelona Facultatius RX
+1104930001,IDI Barcelona Facultatius RX
+1104000R,IDI Barcelona Recerca i Innovació
+11049200,IDI Barcelona Recerca i Innovació
+1104000R00,IDI Barcelona Recerca Genèric
+1104920001,IDI Barcelona Recerca Genèric
+110401,IDI Barcelona CAP Manso
+11040100,IDI Barcelona CAP Manso Genèric
+1104010000,IDI Barcelona CAP Manso Genèric
+11040101,IDI Barcelona CAP Manso RM
+1104010100,IDI Barcelona CAP Manso RM - Genèric
+1104010101,IDI Barcelona CAP Manso RM - 1
+1104010102,IDI Barcelona CAP Manso RM - 2
+11040102,IDI Barcelona CAP Manso TC
+1104010200,IDI Barcelona CAP Manso TC - Genèric
+1104010201,IDI Barcelona CAP Manso TC - 1
+11040107,IDI Barcelona CAP Manso RX
+11040108,IDI Barcelona CAP Manso ECO
+1104010800,IDI Barcelona CAP Manso ECO - Genèric
+110402,IDI Barcelona PSPV
+11040200,IDI Barcelona PSPV Genèric
+1104020000,IDI Barcelona PSPV Genèric
+11040207,IDI Barcelona PSPV RX
+1104020700,IDI Barcelona PSPV RX - Genèric
+1104020701,IDI Barcelona PSPV RX - 1
+1104020702,IDI Barcelona PSPV RX - 2
+1104020703,IDI Barcelona PSPV RX - Port. 1
+1104020704,IDI Barcelona PSPV RX - Port. 2
+1104020705,IDI Barcelona PSPV RX - Port. 3
+110403,IDI Barcelona CAP Pare Claret
+11040300,IDI Barcelona CAP Pare Claret Genèric
+1104030000,IDI Barcelona CAP Pare Claret Genèric
+11040307,IDI Barcelona CAP Pare Claret RX
+11040308,IDI Barcelona CAP Pare Claret ECO
+1104030800,IDI Barcelona CAP Pare Claret ECO - Genèric
+1105,IDI Tarragona
+110500,IDI Tarragona Genèric
+11050000,IDI Tarragona Genèric
+1105000000,IDI Tarragona Genèric
+1105000001,IDI Tarragona Direcció clínica
+1105000002,IDI Tarragona Altres activitats
+1105000003,IDI Tarragona At. continuada
+1105000C,IDI Tarragona Gestió del Coneixement
+11059100,IDI Tarragona Gestió del Coneixement
+1105000C00,IDI Tarragona Formació Genèric
+1105910001,IDI Tarragona Gestió del Coneixement Genèric
+1105000F,IDI Tarragona Facultatius
+11059300,IDI Tarragona Facultatius
+1105000F01,IDI Tarragona Facultatius RX
+1105930001,IDI Tarragona Facultatius RX
+1105000F30,IDI Tarragona Facultatius MN
+1105930002,IDI Tarragona Facultatius MN
+1105000R,IDI Tarragona Recerca i Innovació
+11059200,IDI Tarragona Recerca i Innovació
+1105000R00,IDI Tarragona Recerca Genèric
+1105920001,IDI Tarragona Recerca Genèric
+110501,IDI Tarragona HJ23
+11050100,IDI Tarragona HJ23 Genèric
+1105010000,IDI Tarragona HJ23 Genèric
+11050101,IDI Tarragona HJ23 RM
+1105010100,IDI Tarragona HJ23 RM - Genèric
+1105010101,IDI Tarragona HJ23 RM - RM 1
+1105010102,IDI Tarragona HJ23 RM - RM 2
+1105010108,IDI Tarragona HJ23 RM - TD
+11050102,IDI Tarragona HJ23 TC
+1105010200,IDI Tarragona HJ23 TC - Genèric
+1105010201,IDI Tarragona HJ23 TC - 1
+1105010202,IDI Tarragona HJ23 TC - 2
+1105010208,IDI Tarragona HJ23 TC - TD
+11050103,IDI Tarragona HJ23 MN
+1105010300,IDI Tarragona HJ23 MN - Genèric
+1105010301,IDI Tarragona HJ23 MN - γ càmera 1 
+1105010302,IDI Tarragona HJ23 MN - γ càmera 2 
+1105010303,IDI Tarragona HJ23 MN - Densit. 
+1105010304,IDI Tarragona HJ23 MN - Prova Esforç
+11050104,IDI Tarragona HJ23 PET
+1105010400,IDI Tarragona HJ23 PET-Genèric
+1105010401,IDI Tarragona HJ23 PET-TC-VI
+11050105,IDI Tarragona HJ23 UTM
+1105010500,IDI Tarragona HJ23 UTM - Genèric
+1105010501,IDI Tarragona HJ23 UTM - S. Tractament 1
+11050106,IDI Tarragona HJ23 ANGIO
+1105010600,IDI Tarragona HJ23 ANGIO - Genèric
+1105010601,IDI Tarragona HJ23 ANGIO - 1
+1105010602,IDI Tarragona HJ23 ANGIO - 2
+11050107,IDI Tarragona HJ23 RX
+1105010700,IDI Tarragona HJ23 RX - Genèric
+1105010701,IDI Tarragona HJ23 RX - VI 1
+1105010702,IDI Tarragona HJ23 RX - VI 2
+1105010704,IDI Tarragona HJ23 RX - Mamògraf 
+1105010707,IDI Tarragona HJ23 RX - Portàtil 1 neonats
+1105010708,IDI Tarragona HJ23 RX - Portàtil 2 Uci
+1105010709,IDI Tarragona HJ23 RX - Portàtil 4 Qui
+1105010710,IDI Tarragona HJ23 RX - 8
+1105010711,IDI Tarragona HJ23 RX - 1
+1105010712,IDI Tarragona HJ23 RX - 2
+1105010713,IDI Tarragona HJ23 RX - 7 
+1105010714,IDI Tarragona HJ23 RX - T.Com
+1105010715,IDI Tarragona HJ23 RX - Urg
+1105010716,IDI Tarragona HJ23 RX - Ortopantomografia
+11050108,IDI Tarragona HJ23 ECO
+1105010800,IDI Tarragona HJ23 ECO - Genèric
+1105010801,IDI Tarragona HJ23 ECO - 1
+1105010802,IDI Tarragona HJ23 ECO - 2
+1105010803,IDI Tarragona HJ23 ECO - 3
+1105010804,IDI Tarragona HJ23 ECO - Portàtil
+1105010805,IDI Tarragona HJ23 ECO - 2 D
+1105010806,IDI Tarragona HJ23 ECO - 3 D
+11050109,IDI Tarragona HJ23 RADIOFARMÀCIA
+1105010900,IDI Tarragona HJ23 RadioFar - Genèric
+110503,IDI Tarragona HJ23 Edifici D
+11050300,IDI Tarragona HJ23 Edifici D Genèric
+1105030000,IDI Tarragona HJ23 Edifici D Genèric
+11050307,IDI Tarragona HJ23 Edifici D RX
+1105030700,IDI Tarragona HJ23 Edifici D RX -Genèric
+1105030701,IDI Tarragona HJ23 Edifici D RX - Ortop.
+1105030702,IDI Tarragona HJ23 Edifici D RX - T.Com
+1105030703,IDI Tarragona HJ23 Edifici D RX - 1
+1105030704,IDI Tarragona HJ23 Edifici D RX - 2
+1105030705,IDI Tarragona HJ23 Edifici D RX - 3
+1105030706,IDI Tarragona HJ23 RX - Mamògraf D
+11050308,IDI Tarragona Edifici HJ23 D ECO 
+110504,IDI Tarragona CAP Torreforta
+11050400,IDI Tarragona CAP Torreforta Genèric
+1105040000,IDI Tarragona CAP Torreforta Genèric
+11050407,IDI Tarragona CAP Torreforta RX
+1105040700,IDI Tarragona CAP Torreforta RX Genèric
+1105040702,IDI Tarragona CAP Torreforta RX - 2
+11050408,IDI Tarragona CAP Torreforta ECO
+1105040800,IDI Tarragona CAP Torreforta ECO Genèric
+1105040801,IDI Tarragona CAP Torreforta ECO
+1105040802,IDI Tarragona CAP Torreforta ECO DxI
+110505,IDI Tarragona CAP Reus
+11050500,IDI Tarragona CAP Reus Genèric
+1105050000,IDI Tarragona CAP Reus Genèric
+11050507,IDI Tarragona CAP Reus RX
+1105050700,IDI Tarragona CAP Reus RX - Genèric
+1105050701,IDI Tarragona CAP Reus RX - 1
+1105050702,IDI Tarragona CAP Reus RX - 2
+1105050703,IDI Tarragona CAP Reus RX - 3
+1105050705,IDI Tarragona CAP Reus RX - T.Com
+11050508,IDI Tarragona CAP Reus ECO
+1105050800,IDI Tarragona CAP Reus ECO - Genèric
+1105050801,IDI Tarragona CAP Reus ECO - 1
+1105050802,IDI Tarragona CAP Reus ECO - 2
+110506,IDI Tarragona CAP Salou
+11050600,IDI Tarragona CAP Salou Genèric
+1105060000,IDI Tarragona CAP Salou Genèric
+11050607,IDI Tarragona CAP Salou RX
+1105060700,IDI Tarragona CAP Salou RX - Genèric
+1105060701,IDI Tarragona CAP Salou RX - 1
+11050608,IDI Tarragona CAP Salou ECO
+1105060800,IDI Tarragona CAP Salou ECO - Genèric
+1105060801,IDI Tarragona CAP Salou ECO - 1
+1105060802,IDI Tarragona CAP Salou ECO - 2
+110507,IDI Tarragona CP
+11050700,IDI Tarragona CP Genèric
+1105070000,IDI Tarragona CP Genèric
+11050707,IDI Tarragona CP RX
+1105070700,IDI Tarragona CP RX - Genèric
+1105070701,IDI Tarragona CP RX - 1
+1106,IDI T. Ebre
+110600,IDI T. Ebre Genèric
+11060000,IDI T. Ebre Genèric
+1106000000,IDI T. Ebre Genèric
+1106000001,IDI T. Ebre Direcció clínica
+1106000002,IDI T. Ebre Altres activitats
+1106000003,IDI T. Ebre At. continuada
+1106000C,IDI T.Ebre Gestió del Coneixement
+11069100,IDI T.Ebre Gestió del Coneixement
+1106000C00,IDI T. Ebre Formació Genèric
+1106910001,IDI T. Ebre Gestió del Coneixement Genèric
+1106000F,IDI T.Ebre Facultatius
+11069300,IDI T.Ebre Facultatius
+1106000F01,IDI T. Ebre Facultatius RX
+1106930001,IDI T. Ebre Facultatius RX
+1106000R,IDI T.Ebre Recerca i Innovació
+11069200,IDI T.Ebre Recerca i Innovació
+1106000R00,IDI T. Ebre Recerca Genèric
+1106920001,IDI T. Ebre Recerca Genèric
+110601,IDI T. Ebre HVC
+11060100,IDI T. Ebre HVC Genèric
+1106010000,IDI T. Ebre HVC Genèric
+11060101,IDI T. Ebre HVC RM
+1106010100,IDI T. Ebre HVC RM - Genèric
+1106010101,IDI T. Ebre HVC RM - 1
+1106010108,IDI T. Ebre HVC RM - TD
+11060102,IDI T. Ebre HVC TC
+1106010200,IDI T. Ebre HVC TC - Genèric
+1106010201,IDI T. Ebre HVC TC - 1
+1106010202,IDI T. Ebre HVC TC - 2
+1106010208,IDI T. Ebre HVC TC - TD
+11060103,IDI T. Ebre HVC MN 
+11060104,IDI T. Ebre HVC PET
+11060105,IDI T. Ebre HVC UTM
+11060106,IDI T. Ebre HVC ANGIO
+11060107,IDI T. Ebre HVC RX
+1106010700,IDI T. Ebre HVC RX - Genèric
+1106010701,IDI T. Ebre HVC RX - Mamògraf 1
+1106010702,IDI T. Ebre HVC RX - Mamògraf 2
+1106010703,IDI T. Ebre HVC RX - Portàtil 1
+1106010704,IDI T. Ebre HVC RX - VI 1
+1106010705,IDI T. Ebre HVC RX - VI 2
+1106010706,IDI T. Ebre HVC RX - 1
+1106010707,IDI T. Ebre HVC RX - 2 Urgències
+1106010708,IDI T. Ebre HVC RX - T.Com
+1106010709,IDI T. Ebre HVC RX - Externs
+11060108,IDI T. Ebre HVC ECO
+1106010800,IDI T. Ebre HVC ECO - Genèric
+1106010801,IDI T. Ebre HVC ECO - 1
+1106010802,IDI T. Ebre HVC ECO - 2
+1106010803,IDI T. Ebre HVC ECO - 3
+1106010804,IDI T. Ebre HVC ECO - Portàtil
+1106010805,IDI T. Ebre HVC ECO - VI
+1106010806,IDI T. Ebre HVC ECO - VI 4
+1106010807,IDI T. Ebre HVC ECO - Ecografia Tècnic
+11060109,IDI T. Ebre HVC RADIOFARMÀCIA
+110602,IDI T. Ebre CAP Baix Ebre
+11060200,IDI T. Ebre CAP Baix Ebre Genèric
+1106020000,IDI T. Ebre CAP Baix Ebre Genèric
+11060203,IDI T. Ebre CAP Baix Ebre MN
+1106020300,IDI T. Ebre CAP Baix Ebre MN - Genèric
+1106020301,IDI T. Ebre CAP Baix Ebre MN - Densit.
+11060207,IDI T. Ebre CAP Baix Ebre RX
+1106020700,IDI T. Ebre CAP Baix Ebre RX - Genèric
+1106020701,IDI T. Ebre CAP Baix Ebre RX - 1
+1106020702,IDI T. Ebre CAP Baix Ebre RX - 2
+1106020703,IDI T. Ebre CAP Baix Ebre RX - Ortopanto
+1106020704,IDI T. Ebre CAP Baix Ebre RX - T.Com
+11060208,IDI T. Ebre CAP Baix Ebre ECO
+1106020800,IDI T. Ebre CAP Baix Ebre ECO - Genèric
+1106020801,IDI T. Ebre CAP Baix Ebre ECO - 1
+1106020802,IDI T. Ebre CAP Baix Ebre ECO - 2
+1106020803,IDI T. Ebre CAP Baix Ebre ECO - Tecnic 2
+11060209,IDI T. Ebre CAP Baix Ebre RADIOFARMÀCIA
+1107,IDI Lleida
+110700,IDI Lleida Genèric
+11070000,IDI Lleida Genèric
+1107000000,IDI Lleida Genèric
+1107000001,IDI Lleida Direcció clínica
+1107000002,IDI Lleida Altres activitats
+1107000003,IDI Lleida At. continuada
+1107000C,IDI Lleida Gestió del Coneixement
+11079100,IDI Lleida Gestió del Coneixement
+1107000C00,IDI Lleida Formació Genèric
+1107910001,IDI Lleida Gestió del Coneixement Genèric
+1107000F,IDI Lleida Facultatius
+11079300,IDI Lleida Facultatius
+1107000F01,IDI Lleida Facultatius RX
+1107930001,IDI Lleida Facultatius RX
+1107000F30,IDI Lleida Facultatius MN
+1107930002,IDI Lleida Facultatius MN
+1107000R,IDI Lleida Recerca i Innovació
+11079200,IDI Lleida Recerca i Innovació
+1107000R00,IDI Lleida Recerca Genèric
+1107920001,IDI Lleida Recerca Genèric
+110701,IDI Lleida HAV
+11070100,IDI Lleida HAV Genèric
+1107010000,IDI Lleida HAV Genèric
+11070101,IDI Lleida HAV RM
+1107010100,IDI Lleida HAV RM - Genèric
+1107010101,IDI Lleida HAV RM - 1
+1107010102,IDI Lleida HAV RM - 2
+1107010108,IDI Lleida HAV RM - TD
+11070102,IDI Lleida HAV TC
+1107010200,IDI Lleida HAV TC - Genèric
+1107010201,IDI Lleida HAV TC - 1
+1107010208,IDI Lleida HAV TC - TD
+11070103,IDI Lleida HAV MN
+1107010300,IDI Lleida HAV MN - Genèric
+1107010301,IDI Lleida HAV MN - γ càmera 1
+1107010302,IDI Lleida HAV MN - γ càmera 2
+1107010303,IDI Lleida HAV MN - Densit.
+11070104,IDI Lleida HAV PET
+1107010400,IDI Lleida HAV PET - Genèric
+1107010401,IDI Lleida HAV PET - Portàtil 1
+1107010402,IDI Lleida HAV PET - 1
+11070105,IDI Lleida HAV UTM
+1107010500,IDI Lleida HAV UTM - Genèric
+1107010501,IDI Lleida HAV UTM - S. Tractament 1
+11070106,IDI Lleida HAV ANGIO
+1107010600,IDI Lleida HAV ANGIO - Genèric
+11070107,IDI Lleida HAV RX CONVENCIONAL
+11070108,IDI Lleida HAV ECO
+11070109,IDI Lleida HAV RADIOFARMÀCIA
+1107010900,IDI Lleida HAV RadioFar - Genèric
+1108,IDI Girona
+110800,IDI Girona Genèric
+11080000,IDI Girona Genèric
+1108000000,IDI Girona Genèric
+1108000001,IDI Girona Direcció clínica
+1108000002,IDI Girona Altres activitats
+1108000003,IDI Girona At. continuada
+1108000C,IDI Girona Gestió del Coneixement
+11089100,IDI Girona Gestió del Coneixement
+1108000C00,IDI Girona Formació Genèric
+1108910001,IDI Girona Gestió del Coneixement Genèric
+1108000F,IDI Girona Facultatius
+11089300,IDI Girona Facultatius
+1108000F01,IDI Girona Facultatius RX
+1108930001,IDI Girona Facultatius RX
+1108000F30,IDI Girona Facultatius MN
+1108930002,IDI Girona Facultatius MN
+1108000R,IDI Girona Recerca i Innovació
+11089200,IDI Girona Recerca i Innovació
+1108000R00,IDI Girona Recerca Genèric
+1108920001,IDI Girona Recerca Genèric
+110801,IDI Girona HUJT
+11080100,IDI Girona HUJT Genèric
+1108010000,IDI Girona HUJT Genèric
+11080101,IDI Girona HUJT RM
+1108010100,IDI Girona HUJT RM - Genèric
+1108010101,IDI Girona HUJT RM - 1
+1108010102,IDI Girona HUJT RM - 2
+1108010103,IDI Girona HUJT RM - VI
+1108010108,IDI Girona HUJT RM - TD
+11080102,IDI Girona HUJT TC
+1108010200,IDI Girona HUJT TC - Genèric
+1108010201,IDI Girona HUJT TC - 1
+1108010202,IDI Girona HUJT TC - 2
+1108010203,IDI Girona HUJT TC - 3
+1108010208,IDI Girona HUJT TC - TD
+11080103,IDI Girona HUJT MN
+1108010300,IDI Girona HUJT MN - Genèric
+1108010301,IDI Girona HUJT MN - Densit.
+1108010302,IDI Girona HUJT MN - γ càmera 1
+1108010303,IDI Girona HUJT MN - SPECT-TC 
+11080104,IDI Girona HUJT PET
+1108010400,IDI Girona HUJT PET - Genèric
+1108010401,IDI Girona HUJT PET - 1
+1108010402,IDI Girona HUJT PET - VI
+11080105,IDI Girona HUJT UTM
+1108010500,IDI Girona HUJT UTM - Genèric
+1108010501,IDI Girona HUJT UTM - S. Tractament 1
+11080106,IDI Girona HUJT ANGIO
+1108010600,IDI Girona HUJT ANGIO - Genèric
+1108010601,IDI Girona HUJT ANGIO - 1
+11080107,IDI Girona HUJT RX
+1108010700,IDI Girona HUJT RX - Genèric
+1108010701,IDI Girona HUJT RX - Mamògraf 1 E
+1108010702,IDI Girona HUJT RX - Mamògraf 2
+1108010703,IDI Girona HUJT RX - Portàtil 1
+1108010704,IDI Girona HUJT RX - Portàtil 2
+1108010705,IDI Girona HUJT RX - 1
+1108010706,IDI Girona HUJT RX - 2 Urg-VI
+1108010707,IDI Girona HUJT RX - 3
+1108010708,IDI Girona HUJT RX - T.Com
+1108010709,IDI Girona HUJT RX - Portàtil 3
+1108010710,IDI Girona HUJT RX - Portàtil 4
+11080108,IDI Girona HUJT ECO
+1108010800,IDI Girona HUJT ECO - Genèric
+1108010801,IDI Girona HUJT ECO - 1
+1108010802,IDI Girona HUJT ECO - 2
+1108010803,IDI Girona HUJT ECO - 3
+1108010804,IDI Girona HUJT ECO - 4 BK
+1108010805,IDI Girona HUJT ECO - Portàtil 1
+1108010806,IDI Girona HUJT ECO - 4 Portàtil 2
+11080109,IDI Girona HUJT RADIOFARMÀCIA
+1108010900,IDI Girona HUJT RadioFar - Genèric
+110802,IDI Girona HSC
+11080200,IDI Girona HSC Genèric
+1108020000,IDI Girona HSC Genèric
+11080201,IDI Girona HSC RM
+1108020100,IDI Girona HSC RM - Genèric
+1108020101,IDI Girona HSC RM - 1
+1108020102,IDI Girona HSC RM - 2 (IAS Salt)
+1108020108,IDI Girona HSC RM - TD
+11080202,IDI Girona HSC TC
+1108020200,IDI Girona HSC TC - Genèric
+1108020201,IDI Girona HSC TC - 1
+1108020208,IDI Girona HSC TC - TD
+11080203,IDI Girona HSC MN
+11080204,IDI Girona HSC PET
+11080205,IDI Girona HSC UTM
+11080206,IDI Girona HSC ANGIO
+11080207,IDI Girona HSC RX
+1108020700,IDI Girona HSC RX - Genèric
+1108020701,IDI Girona HSC RX - 1
+1108020702,IDI Girona HSC RX - 2
+1108020703,IDI Girona HSC RX - 3 Urg
+1108020704,IDI Girona HSC RX - Esterotàxia
+1108020705,IDI Girona HSC RX - Mamògraf 1
+1108020706,IDI Girona HSC RX - Mamògraf 2
+1108020707,IDI Girona HSC RX - Portátil
+1108020708,IDI Girona HSC RX - T.Com
+1108020709,IDI Girona HSC RX - MAMA RC1
+1108020710,IDI Girona HSC RX - Portàtil 2
+11080208,IDI Girona HSC ECO
+1108020800,IDI Girona HSC ECO - Genèric
+1108020801,IDI Girona HSC ECO - 1 Prt
+1108020802,IDI Girona HSC ECO - 4
+1108020803,IDI Girona HSC ECO - 2 Gen
+1108020804,IDI Girona HSC ECO - 3 Urg
+110803,IDI Girona CAP Güell
+11080300,IDI Girona CAP Güell Genèric
+1108030000,IDI Girona CAP Güell Genèric
+11080307,IDI Girona CAP Güell RX CONVENCIONAL
+1108030700,IDI Girona CAP Güell RX - Genèric
+1108030701,IDI Girona CAP Güell RX - Mamògraf 2
+1108030702,IDI Girona CAP Güell RX - Ortopanto
+1108030703,IDI Girona CAP Güell RX - 1 
+1108030704,IDI Girona CAP Güell RX - Informes
+11080308,IDI Girona CAP Güell ECO
+1108030800,IDI Girona CAP Güell ECO - Genèric
+1108030801,IDI Girona CAP Güell ECO - 2 Esp
+1108030802,IDI Girona CAP Güell ECO - 4 Nor
+1108030803,IDI Girona CAP Güell ECO - 3
+1108030804,IDI Girona CAP Güell ECO - 2
+110804,IDI Girona FHOCG
+11080400,IDI Girona FHOCG Genèric
+1108040000,IDI Girona FHOCG Genèric
+11080407,IDI Girona FHOCG RX
+1108040700,IDI Girona FHOCG RX - Genèric
+1108040701,IDI Girona FHOCG RX - 1
+11080408,IDI Girona FHOCG ECO 
+110805,IDI Girona CAP Ripollès
+11080500,IDI Girona CAP Ripollès Genèric
+1108050000,IDI Girona CAP Ripollès Genèric
+11080507,IDI Girona CAP Ripollès RX
+1108050700,IDI Girona CAP Ripollès RX - Genèric
+1108050701,IDI Girona CAP Ripollès RX - 1
+11080508,IDI Girona CAP Ripollès ECO 
+110806,IDI Girona CAP Roses
+11080600,IDI Girona CAP Roses Genèric
+1108060000,IDI Girona CAP Roses Genèric
+11080607,IDI Girona CAP Roses RX
+1108060700,IDI Girona CAP Roses RX - Genèric
+1108060701,IDI Girona CAP Roses RX - 1
+11080608,IDI Girona CAP Roses ECO 
+1109,IDI Telediagnòstic 
+110900,IDI Telediagnòstic Genèric
+11090000,IDI Telediagnòstic Genèric
+1109000000,IDI Telediagnòstic Genèric
+1109000001,IDI Telediagnòstic Direcció clínica
+1109000002,IDI Telediagnòstic Gestoria TD
+1109000C,IDI Telediagnòstic Gestió Coneixement
+11099100,IDI Telediagnòstic Gestió Coneixement
+1109000C00,IDI Telediagnòstic Formació Genèric
+1109910001,IDI Telediagnòstic Gestió del Coneixement Genèric
+1109000F,IDI Telediagnòstic Facultatius
+11099300,IDI Telediagnòstic Facultatius
+1109000F01,IDI Telediagnòstic Facultatius RX
+1109930001,IDI Telediagnòstic Facultatius RX
+1109000R,IDI Telediagnòstic Recerca i Innovació
+11099200,IDI Telediagnòstic Recerca i Innovació
+1109000R00,IDI Telediagnòstic Recerca Genèric
+1109920001,IDI Telediagnòstic Recerca Genèric
+110901,IDI Telediagnòstic RM
+11090100,IDI Telediagnòstic RM Urgències
+1109010000,IDI Telediagnòstic RM Urg - Genèric
+11090101,IDI Telediagnòstic RM Programada
+1109010100,IDI Telediagnòstic RM Prog - Genèric
+110902,IDI Telediagnòstic TC 
+11090200,IDI Telediagnòstic TC Urgències
+1109020000,IDI Telediagnòstic TC Urg - Genèric
+11090201,IDI Telediagnòstic TC Programada
+1109020100,IDI Telediagnòstic TC Prog - Genèric
+110903,IDI Telediagnòstic MN
+11090300,IDI Telediagnòstic MN Urgències
+1109030000,IDI Telediagnòstic MN Urg - Genèric
+110904,IDI Telediagnòstic PET
+11090400,IDI Telediagnòstic PET Urgències
+1109040000,IDI Telediagnòstic PET Urg - Genèric
+11090401,IDI Telediagnòstic PET Programada
+1109040100,IDI Telediagnòstic PET Prog - Genèric
+12,Altres
+1200,Altres
+90,Logística
+9000,Logística
+900000,Logística Genèric
+90000000,Logística Genèric
+9000000000,Logística Genèric
+9000000001,Logística Equip
+20,IDI Projectes
+2000,IDI Projectes
+200000,IDI Projectes
+20000000,IDI Projectes Genèric
+2000000000,IDI Projectes Genèric
+20010000,IDI Responsabilitat Imatge Mèdica Digital 
+2001000000,IDI Respons. Imatge Mèd. Dig. - Genèric
+2001010000,IDI Programari Dosis Rad. - Genèric
+2001020000,IDI Plat. Dades Genòmiques  - Genèric
+2001030000,IDI Oficina Tècnica  - Genèric
+2001040000,IDI RIS - Genèric
+2001050000,IDI FTICSS IA - Pla d'actuació 1 Genèric
+2001060000,IDI Integ Dosi Rad Prof Primària-Genèric
+2001070000,IDI Plat Int Imat Ent No Siscat Genèric
+2001080000,IDI Visor d’Imatge Anat Pat Dig Genèric
+2001090000,IDI Entorn Info. Genòm. OMIQ HES Genèric
+2001100000,IDI Progeny Genèric
+2001200000,IDI FTICSS IA - Pla d'actuació 2 Genèric
+2001300000,IDI Sistema Integ Infor Genòmica Genèric
+2001400000,IDI Prof Resp Tècnic Assist Inf Clín Genèric
+2001500000,IDI Pla Monit  Funcion models IA Genèric
+2001600000,IDI Proj assist HSJD Genèric
+2001700000,IDI FTICSS IA - Pla d'actuació 3 Genèric
+20020000,IDI Suport Tècnic Processos Assistencials
+2002000000,IDI Suport Tècnic Proc. Assist. - Genèric

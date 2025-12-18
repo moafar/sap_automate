@@ -1,0 +1,56 @@
+# Lista de Clientes para Exportación Multi-Cliente
+# ==================================================
+# 
+# Formato:
+# - Un código de cliente por línea
+# - Líneas que comienzan con # son comentarios (ignoradas)
+# - Líneas vacías son ignoradas
+# - No debe haber espacios en los códigos de cliente
+#
+# Uso:
+#   python main.py --task export_multi_client --clients-file config/clients.txt
+#
+# ===== CLIENTES ACTIVOS =====
+
+# Ejemplo de códigos de cliente
+# (Reemplazar con códigos reales)
+
+# 300002
+# 400002
+# 500123
+# 500118
+# 500191
+# 500127
+# 500192
+# 500110
+# 500146
+# 500145
+# 500129
+# 500124
+# 500143
+# 500152
+# 500158
+# 500159
+# 500210
+500113
+# 500116
+# 500117
+# 500121
+# 500138
+# 500140
+# 500144
+# 500156
+
+
+# ===== CLIENTES PARA PRUEBAS (comentados) =====
+# Descomentar para procesar
+
+# CLI004
+# CLI005
+# CLI006
+
+# ===== NOTAS =====
+# - Los exports se guardarán en exports/
+# - Formato: EXPORT_CLIENT_{CODIGO}_{AÑO}M{MES_DESDE}-{MES_HASTA}_{TIMESTAMP}.csv
+# - Revisar logs/app.log para detalles de ejecución
+

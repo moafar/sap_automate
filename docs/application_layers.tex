@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{Arquitectura de la Aplicación de Scripts SAP}
+\author{Documentación del Proyecto}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+Este documento describe la arquitectura de la aplicación de automatización de scripts SAP. La aplicación está organizada en capas modulares para separar responsabilidades y facilitar el mantenimiento.
+
+\section{Capas de la Aplicación}
+
+\subsection{1. Capa de Configuración (\texttt{config/})}
+\textbf{Propósito:} Centralizar parámetros y secretos para evitar valores codificados en el código fuente.
+
+\begin{itemize}
+    \item \textbf{Archivos clave:}
+    \begin{itemize}
+        \item \texttt{settings.yaml}: Configuración general de la aplicación.
+        \item \texttt{secrets.yaml}: Credenciales y datos sensibles (no versionado).
+        \item \texttt{field\_mappings.yaml}: Mapeo de campos para transformaciones de datos.
+    \end{itemize}
+\end{itemize}
+
+\subsection{2. Capa Core (\texttt{src/core/})}
+\textbf{Propósito:} Gestionar la interacción directa y de bajo nivel con SAP GUI Scripting.
+
+\begin{itemize}
+    \item \textbf{Componentes:}
+    \begin{itemize}
+        \item \texttt{sap\_connection.py}: Maneja la conexión, sesión y el proceso de login con SAP GUI.
+        \item \texttt{sap\_utils.py}: Contiene funciones genéricas de navegación y manipulación de la interfaz de usuario de SAP.
+    \end{itemize}
+\end{itemize}
+
+\subsection{3. Capa de Utilidades (\texttt{src/utils/})}
+\textbf{Propósito:} Proveer herramientas transversales de soporte que son utilizadas por otras capas.
+
+\begin{itemize}
+    \item \textbf{Componentes:}
+    \begin{itemize}
+        \item \texttt{logger.py}: Sistema centralizado de registro de eventos (logs).
+        \item \texttt{credential\_manager.py}: Gestión segura de credenciales y acceso a secretos.
+        \item \texttt{field\_mapper.py}: Lógica para transformar y normalizar datos.
+    \end{itemize}
+\end{itemize}
+
+\subsection{4. Capa de Scripts / Negocio (\texttt{src/scripts/})}
+\textbf{Propósito:} Implementar la lógica de negocio específica para cada tarea de automatización.
+
+\begin{itemize}
+    \item \textbf{Ejemplo:}
+    \begin{itemize}
+        \item \texttt{export\_invoice.py}: Utiliza las capas inferiores (Core y Utils) para ejecutar el flujo específico de exportación de facturas.
+    \end{itemize}
+\end{itemize}
+
+\subsection{5. Punto de Entrada (\texttt{main.py})}
+\textbf{Propósito:} Orquestador principal de la aplicación. Se encarga de inicializar componentes y ejecutar los scripts seleccionados según los argumentos o configuración.
+
+\section{Conclusión}
+Esta estructura jerárquica facilita la escalabilidad y el mantenimiento. Los cambios en la conexión a SAP se aíslan en la capa Core, mientras que las nuevas automatizaciones se añaden simplemente como nuevos scripts en la capa de Negocio, reutilizando la infraestructura existente.
+
+\end{document}

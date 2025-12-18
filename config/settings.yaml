@@ -1,0 +1,31 @@
+sap:
+  # Authentication mode: "existing_session" or "credentials"
+  # - existing_session: Connect to an already open SAP GUI session
+  # - credentials: Login programmatically using stored credentials
+  connection_mode: "credentials"  # Usar credenciales de secrets.yaml
+  
+  # For existing_session mode:
+  connection_index: 0
+  session_index: 0
+  
+  # connection_string: Name of SAP system as it appears in SAP Logon
+  # Debe ser EXACTAMENTE como aparece en la "Descripción" de SAP Logon
+  connection_string: "ECOSISCAT - ESX - Produccio"  # Sin tilde en la ó
+  
+  transaction_code: "/nZTSD_FACTURACION"
+
+export:
+  default_directory: "C:\\Users\\Z1081401\\Desktop\\scripts_SAP\\exports"
+  default_filename_prefix: "EXPORT_ZTSD_FACTURACION_"
+  format: "csv-LEAN-STANDARD"  # CSV format
+  extension: "csv"
+
+logging:
+  level: "INFO"
+  file: "logs/app.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+timeouts:
+  default_wait: 0.5
+  long_wait: 2.0
+  max_retries: 6

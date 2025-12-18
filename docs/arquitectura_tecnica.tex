@@ -1,0 +1,394 @@
+\documentclass[11pt,a4paper]{article}
+
+% Paquetes esenciales
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{booktabs}
+
+
+
+% Configuración de geometría
+\geometry{
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+% Configuración de hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+% Configuración de TikZ
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+% Estilos globales para diagramas (puedes ajustarlos si quieres más compacto en todos)
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!30]
+\tikzstyle{process}   = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{arrow}     = [thick,->,>=stealth]
+
+% Configuración de código
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10}
+}
+
+% Cajas de información
+\newtcolorbox{infobox}[1]{
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    fonttitle=\bfseries,
+    title=#1
+}
+
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\pagestyle{fancy}
+\fancyhf{} % limpia encabezados y pies
+
+% Texto discreto en gris y más abajo
+\fancyfoot[C]{\textcolor{gray}{© 2025 Rafael Ortiz \,|\, Confidencial}}
+
+% Mover el pie más cerca del borde
+\setlength{\footskip}{14pt} % menor valor = más abajo
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+% Portada
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Huge\bfseries Institut de Diagnòstic per la Imatge\\[1cm]}
+    {\Huge\bfseries Framework de Automatización SAP\\[0.5cm]}
+    {\LARGE Arquitectura y Visión General\\[0.5cm]}
+    
+    \vfill
+    
+    {\Large Documentación Técnica\\[0.3cm]}
+    
+    {\large Versión 0.9\\[2cm]}
+
+    {\Large Rafael Ortiz Martinez\\[0.1cm]
+      \textbf{Direcció de Recursos Econòmics}\\[0.1cm]
+      \texttt{rafaelortiz.idi@gencat.cat\\[1.5cm]}}
+
+    {\large \today}
+    
+    \vfill
+\end{titlepage}
+
+% Tabla de contenidos
+\tableofcontents
+\newpage
+
+% ----------------------------------------------------------
+% -------------------- CONTENIDO ---------------------------
+% ----------------------------------------------------------
+
+\section{Introducción}
+
+Este documento presenta la arquitectura general del framework de automatización desarrollado para automatizar tareas con SAP GUI en el IDI.  El objetivo es contar con una base que permita construir automatizaciones en un entorno unificado siguiendo buenas prácticas de programación y de arquitectura.
+
+\subsection{Descripción del Sistema}
+
+Se construyó una base de desarrollo que proporciona:
+
+\begin{itemize}[itemsep=6pt]
+    \item Un entorno de implementación de automatizaciones de procesos SAP con y sin supervisión.
+    \item Una estructura coherente para organizar scripts y facilitar su mantenimiento.
+    \item Manejo adecuado de credenciales y configuraciones.
+    \item Dos modos de trabajo: sesión existente (SE) o autenticación automática (AA).
+\end{itemize}
+
+\subsection{Alcance}
+
+Se ha desarrollado este framework para dar soporte a:
+
+\begin{itemize}
+    \item Procesos repetitivos de interacción con SAP dentro del IDI.
+    \item Integraciones potenciales con otros sistemas.
+    \item Automatizaciones específicas basadas en interacción GUI.
+\end{itemize}
+
+% ----------------------------------------------------------
+
+\section{Principios de Diseño}
+
+\subsection{Arquitectura en Capas}
+
+El framework se organiza en tres capas principales, permitiendo una separación clara de responsabilidades:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+    \node (usuario) [startstop] {Usuario / Cliente};
+    \node (scripts) [process, below of=usuario] {Capa de Scripts};
+    \node (core)    [process, below of=scripts] {Capa Core};
+    \node (utils)   [process, left of=core, xshift=-3cm] {Capa Utils};
+    \node (sap)     [startstop, below of=core] {SAP GUI};
+    
+    \draw [arrow] (usuario) -- (scripts);
+    \draw [arrow] (scripts) -- (core);
+    \draw [arrow] (core) -- (sap);
+    \draw [arrow] (scripts) -- (utils);
+    \draw [arrow] (utils) -- (core);
+\end{tikzpicture}
+\caption{Arquitectura general del framework}
+\end{figure}
+
+\subsubsection{Capa Core}
+
+Contiene los scripts básicos de conexión y gestión.  Se encarga de:
+
+\begin{itemize}
+    \item Gestionar la conexión con SAP GUI.
+    \item Abstraer operaciones básicas sobre la interfaz.
+    \item Mantener el ciclo de vida de las sesiones SAP.
+\end{itemize}
+
+\subsubsection{Capa de Scripts}
+
+Incluye la lógica específica de cada proceso de negocio:
+
+\begin{itemize}
+    \item Implementación de tareas concretas.
+    \item Uso de los servicios expuestos por la Capa Core.
+    \item Desarrollo independiente entre scripts.
+\end{itemize}
+
+\subsubsection{Capa Utils}
+
+Proporciona funcionalidades transversales:
+
+\begin{itemize}
+    \item Gestión de configuración.
+    \item Sistema centralizado de logging.
+    \item Manejo de credenciales.
+    \item Apoyo al desarrollo
+\end{itemize}
+
+\subsection{Modularidad y Extensibilidad}
+
+El framework permite incorporar nuevas automatizaciones sin afectar las existentes. Cada módulo se desarrolla en un entorno  aislado y puede evolucionar de forma independiente.
+
+% ----------------------------------------------------------
+
+\section{Flujos Operacionales}
+
+\subsection{Modos de Operación}
+
+El framework ofrece dos formas de ejecución:
+
+\subsubsection{Sesión Existente (SE)}
+Se usa para realizar tareas automáticas cuando el usuario ya tiene SAP abierto manualmente.  Es útil para pruebas o entornos con restricciones de autenticación.
+
+\subsubsection{Autenticación Automática (AA)}
+El script realiza las tareas desde cero: inicia SAP GUI, introduce credenciales y ejecuta y cierra el proceso completo sin intervención humana.  Útil para tareas programadas. 
+
+\subsection{Ciclo de Ejecución}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.6cm and 0.7cm,
+    startstop/.style={
+        rectangle, rounded corners,
+        minimum width=1.9cm,
+        minimum height=0.6cm,
+        text centered,
+        draw=black,
+        fill=red!30,
+        font=\small,
+        inner sep=2pt
+    },
+    process/.style={
+        rectangle,
+        minimum width=2.2cm,
+        minimum height=0.6cm,
+        text centered,
+        draw=black,
+        fill=orange!30,
+        font=\small,
+        inner sep=2pt
+    },
+    arrow/.style={thick,->,>=stealth}
+]
+
+% ---- FILA SUPERIOR ----
+\node (init)    [startstop] {Inicio};
+\node (config)  [process, right=of init] {Config.};
+\node (auth)    [process, right=of config] {Auth.};
+\node (task)    [process, right=of auth] {Ejecución};
+
+% ---- FILA INFERIOR ----
+\node (result)  [process, below=of task] {Resultados};
+\node (cleanup) [process, left=of result] {Limpieza};
+\node (end)     [startstop, left=of cleanup] {Fin};
+
+% ---- Flechas fila superior ----
+\draw [arrow] (init) -- (config);
+\draw [arrow] (config) -- (auth);
+\draw [arrow] (auth) -- (task);
+
+% ---- Conexión entre filas ----
+\draw [arrow] (task) -- (result);
+
+% ---- Flechas fila inferior ----
+\draw [arrow] (result) -- (cleanup);
+\draw [arrow] (cleanup) -- (end);
+
+\end{tikzpicture}
+\caption{Ciclo general de ejecución}
+\end{figure}
+
+% ----------------------------------------------------------
+
+\section{Aspectos Técnicos}
+
+\subsection{Stack Tecnológico}
+
+El framework se apoya en las siguientes tecnologías:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2} % ajuste ligero
+\begin{tabular}{p{3cm} p{4.5cm} p{6cm}}
+\toprule
+\textbf{Componente} & \textbf{Tecnología} & \textbf{Uso} \\
+\midrule
+Python & 3.7+ & Lenguaje de desarrollo \\
+SAP GUI & COM Scripting API & Interacción con la interfaz \\
+Configuración & YAML & Parámetros del framework y scripts \\
+Credenciales & Keyring del SO & Almacenamiento seguro \\
+Logging & Estándar de Python & Trazabilidad y depuración \\
+\bottomrule
+\end{tabular}
+\caption{Tecnologías utilizadas}
+\end{table}
+
+\subsection{Gestión de Configuración}
+
+La configuración se organiza en tres niveles:
+
+\begin{itemize}
+    \item Parámetros generales del sistema.
+    \item Configuración del framework (\texttt{/core/config}).
+    \item Parámetros individuales de cada script (\texttt{/scripts/script}).
+\end{itemize}
+
+\subsection{Credenciales}
+
+El framework soporta:
+
+\begin{itemize}
+    \item Keyring del sistema (recomendado).
+    \item Variables de entorno (en entornos de confianza).
+    \item Credenciales en secrets (solo en desarrollo).
+\end{itemize}
+
+\subsection{Logging}
+
+El logging permite seguir la ejecución y diagnosticar errores. Se gestiona en \texttt{/core/app.log} pero se recomienda implemetar rotación.
+
+% ----------------------------------------------------------
+
+\section{Patrones de Interacción con SAP}
+
+El framework abstrae varias operaciones comunes:
+
+\begin{itemize}
+    \item Búsqueda de elementos en la interfaz.
+    \item Manipulación de grillas ALV.
+    \item Navegación entre transacciones.
+    \item Gestión de ventanas modales.
+\end{itemize}
+
+También dispone de mecanismos básicos para capturar errores con contexto.
+
+% ----------------------------------------------------------
+
+\section{Casos de Uso}
+
+\subsection{Exportación Automatizada}
+
+Proceso típico:
+
+\begin{enumerate}
+    \item Navegar a la transacción.
+    \item Aplicar filtros.
+    \item Ejecutar la consulta.
+    \item Leer la grilla de resultados.
+    \item Exportar los datos a un formato estructurado.
+\end{enumerate}
+
+\subsection{Procesamiento por Lotes}
+
+Permite ejecutar un mismo proceso para una lista de entidades, gestionando errores de forma independiente para cada una de ellas.
+
+% ----------------------------------------------------------
+
+\section{Extensibilidad}
+
+Agregar una nueva automatización implica:
+
+\begin{enumerate}
+    \item Analizar la transacción objetivo.
+    \item Identificar los elementos relevantes de la GUI.
+    \item Implementar la lógica (sección \texttt{scripts/script/}).
+    \item Integrarla con el framework.
+    \item Realizar pruebas y ajustes.
+\end{enumerate}
+
+% ----------------------------------------------------------
+
+\section{Consideraciones Operacionales}
+
+\subsection{Requisitos}
+
+\begin{itemize}
+    \item SAP GUI instalado y scripting habilitado.
+    \item Python con las dependencias necesarias (\texttt{requirements.txt}).
+    \item Permisos adecuados en el sistema SAP.
+\end{itemize}
+
+\subsection{Despliegue}
+
+El framework puede utilizarse en:
+
+\begin{itemize}
+    \item Estaciones de trabajo.
+    \item Servidores Windows con GUI.
+    \item Sesiones RDP persistentes.
+\end{itemize}
+
+% ----------------------------------------------------------
+
+\section{Conclusiones}
+
+El framework ofrece una base sencilla, segura y escalable para automatizar procesos SAP en el IDI. Su estructura modular facilita el mantenimiento y permite incorporar nuevas automatizaciones sin comprometer la estabilidad del sistema. Puede desplegarse en un entorno de alta seguridad, integrándose con los controles existentes de acceso, trazabilidad y gestión de credenciales.
+
+Al abstraer la complejidad del Scripting API y estandarizar la interacción con SAP GUI, el framework reduce la dependencia de procesos manuales y de desarrollos ad-hoc; además mejora la reproducibilidad de los procesos. Su adopción permitirá acelerar tareas operativas, disminuir errores manuales y fortalecer la gobernanza sobre las automatizaciones institucionales.
+
+En conjunto, el framework constituye un punto de partida robusto para evolucionar hacia una fábrica de automatización sostenible, alineada con las necesidades operativas y de seguridad del IDI. 
+
+\end{document}
