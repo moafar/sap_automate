@@ -2,6 +2,9 @@
 .env
 
 # Virtual environment
+.venv/
+.env/
+.ENV/
 venv/
 env/
 ENV/
