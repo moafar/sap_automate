@@ -7,6 +7,11 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ---
 
+## v1.1.1 (2026-01-09)
+
+### ✨ Added
+- Script `export_multi_client_cli.py` para exportar facturas de múltiples clientes
+
 ## v1.1.0 (2025-12-05)
 
 ### ✨ Added
