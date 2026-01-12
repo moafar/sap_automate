@@ -6,11 +6,7 @@ Nuevo script que contiene un mapa completo de campos (`FIELD_MAP`) y
 permite pasar filtros por línea de comandos a la función `run`.
 
 Modo de uso (ejemplo):
-python -m src.scripts.export_multi_client_cli \
-  --clients clients.txt \
-  --filter client=CLI001 \
-  --filter month=1:3 \
-  --simulate
+python3 -m src.scripts.export_multi_client_cli --clients src/scripts/clientes.txt --filter date_end_service=01/01/2025:31/12/2025 --filter status=F --connection-mode credentials
 
 Soporta filtros en formato `key=value` (LOW) o `key=low:high`.
 Si se pasa `--simulate`, no requiere sesión SAP y sólo emula la ejecución.
@@ -25,6 +21,8 @@ import os
 import time
 from datetime import datetime
 from typing import Dict, Optional, Tuple
+import yaml
+from src.core.sap_utils import find_alv_shell, handle_security_popup, close_excel_workbook
 
 logger = logging.getLogger("SAP_Automation")
 logging.basicConfig(level=logging.INFO)
@@ -187,12 +185,12 @@ class MultiClientExporterV2:
         results = {}
         for i, client in enumerate(client_list, 1):
             logger.info(f"[{i}/{len(client_list)}] {client}")
-            # Ensure client field is present if not provided
-            if 'client' not in filters:
-                filters['client'] = (client, None)
+            # Build a per-client copy of filters so we don't reuse/mutate the same dict
+            per_client_filters = dict(filters) if filters is not None else {}
+            per_client_filters['client'] = (client, None)
 
             try:
-                ok = self._export_single_client(client, filters)
+                ok = self._export_single_client(client, per_client_filters)
                 results[client] = {"success": ok, "timestamp": datetime.now().isoformat()}
             except Exception as e:
                 logger.exception("Error exporting client %s", client)
@@ -213,19 +211,129 @@ class MultiClientExporterV2:
         # 2) Apply filters
         self._apply_filters_by_map(filters)
 
-        # 3) Trigger search / export - this depends on UI and may be customized
+        # 3) Trigger search / export - real flow
         if self.simulate:
             logger.info(f"Simulated export for client {client_code} with filters: {filters}")
             return True
 
         try:
+            # Execute search
             self.session.findById("wnd[0]/tbar[1]/btn[8]").press()
             time.sleep(self.config.get('timeouts', {}).get('long_wait', 2))
-            # Here one would continue the export flow (ALV detection, export dialog, save, etc.)
+
+            # Find ALV
+            wnd0 = self.session.findById("wnd[0]")
+            alv = find_alv_shell(wnd0)
+            if not alv:
+                logger.warning(f"No ALV found for client {client_code} - possibly no data")
+                return False
+
+            # Export via context menu
+            try:
+                alv.ContextMenu()
+                alv.SelectContextMenuItem("&XXL")
+            except Exception:
+                logger.warning("Could not invoke ALV context menu/export action")
+
+            time.sleep(self.config.get('timeouts', {}).get('default_wait', 0.5))
+
+            # Handle export dialog
+            self._handle_export_dialog()
+
+            # Prepare filename and save
+            extension = self.config.get('export', {}).get('extension', 'csv')
+            prefix = self.config.get('export', {}).get('default_filename_prefix', 'EXPORT')
+            export_dir = self.config.get('export', {}).get('default_directory', '.')
+            filename = f"{prefix}{client_code}_{datetime.now():%Y%m%d_%H%M%S}.{extension}"
+            full_path = os.path.join(export_dir, filename)
+
+            self._handle_save_dialog(export_dir, filename)
+
+            # Handle security popup
+            handle_security_popup(self.session)
+
+            # Wait and close Excel workbook
+            time.sleep(self.config.get('timeouts', {}).get('long_wait', 2))
+            close_excel_workbook(full_path)
+            # Attempt to close the SAP results window for this client
+            try:
+                # Prefer closing a secondary window if present
+                try:
+                    self.session.findById("wnd[1]").close()
+                    logger.debug("Closed SAP results window wnd[1].")
+                except Exception:
+                    try:
+                        self.session.findById("wnd[0]").close()
+                        logger.debug("Closed SAP main window wnd[0].")
+                    except Exception:
+                        try:
+                            # As fallback, send a close VKey
+                            self.session.findById("wnd[0]").sendVKey(15)
+                            logger.debug("Sent close VKey(15) to wnd[0].")
+                        except Exception:
+                            logger.debug("Could not close any SAP window for this client.")
+            except Exception as e:
+                logger.warning("Error when attempting to close SAP window: %s", e)
+
+            logger.info(f"Export saved: {filename}")
             return True
+
         except Exception:
             logger.exception("SAP export failed for %s", client_code)
             return False
+
+    def _handle_export_dialog(self):
+        """Mimic the export dialog handling from original exporter."""
+        try:
+            wnd1 = self.session.findById("wnd[1]")
+
+            # Try to select format combo
+            try:
+                cmb = wnd1.findById("usr/ssubSUB_CONFIGURATION:SAPLSALV_GUI_CUL_EXPORT_AS:0512/cmbGS_EXPORT-FORMAT")
+                export_format = self.config.get('export', {}).get('format', 'csv-LEAN-STANDARD')
+                try:
+                    cmb.Key = export_format
+                    logger.debug("Export format set to: %s", export_format)
+                except Exception as fe:
+                    logger.warning("Could not set export format %s: %s", export_format, fe)
+            except Exception:
+                logger.debug("Format combo box not found in export dialog")
+
+            # Press export button - try known buttons
+            try:
+                wnd1.findById("tbar[0]/btn[20]").press()
+            except Exception:
+                try:
+                    wnd1.findById("tbar[0]/btn[0]").press()
+                except Exception:
+                    logger.warning("Could not press export button in dialog")
+
+            logger.debug("Export dialog handled")
+
+        except Exception as e:
+            logger.error("Error in export dialog: %s", e)
+            raise
+
+    def _handle_save_dialog(self, directory: str, filename: str):
+        time.sleep(self.config.get('timeouts', {}).get('default_wait', 0.5))
+        try:
+            wnd1 = self.session.findById("wnd[1]")
+            try:
+                wnd1.findById("usr/ctxtDY_PATH").Text = directory
+            except Exception:
+                logger.debug("Save dialog path field not found")
+            try:
+                wnd1.findById("usr/ctxtDY_FILENAME").Text = filename
+            except Exception:
+                logger.debug("Save dialog filename field not found")
+            try:
+                wnd1.findById("tbar[0]/btn[0]").press()
+            except Exception:
+                logger.debug("Save dialog OK button not found/press failed")
+            logger.debug("Save dialog handled")
+        except Exception as e:
+            logger.error("Error in save dialog: %s", e)
+            raise
 
     def _apply_filters_by_map(self, filters: Dict[str, Tuple[Optional[str], Optional[str]]]):
         """Applies the provided logical filters to the current SAP screen using FIELD_MAP.
@@ -277,7 +385,21 @@ def main(argv: Optional[list[str]] = None) -> int:
     p.add_argument("--password", help="Password for credentials mode")
     p.add_argument("--client", help="Client (mandante) for credentials mode")
     p.add_argument("--output", help="If provided, write JSON summary to this file")
+    p.add_argument("--config", default="config/settings.yaml", help="Path to settings YAML file")
     args = p.parse_args(argv)
+
+    # Load configuration
+    config_path = args.config
+    config: dict = {}
+    if os.path.exists(config_path):
+        try:
+            with open(config_path, 'r', encoding='utf-8') as cf:
+                config = yaml.safe_load(cf) or {}
+            logger.info("Loaded configuration from %s", config_path)
+        except Exception as e:
+            logger.warning("Could not load config %s: %s", config_path, e)
+    else:
+        logger.info("Config file not found at %s, using defaults", config_path)
 
     clients = read_client_list(args.clients)
     filters = build_filters_from_args(args.filter)
@@ -287,22 +409,42 @@ def main(argv: Optional[list[str]] = None) -> int:
     if not args.simulate:
         try:
             from src.core.sap_connection import SAPConnection
+            # Prefer CLI-specified connection_mode, otherwise use config
+            conn_mode = args.connection_mode or config.get('sap', {}).get('connection_mode')
 
             creds = None
-            if args.connection_mode == 'credentials':
-                creds = {"username": args.username, "password": args.password, "client": args.client}
+            if conn_mode == 'credentials':
+                # precedence: CLI args > secrets.yaml > config
+                # Try loading secrets.yaml
+                secrets_path = os.path.join(os.path.dirname(config_path), 'secrets.yaml')
+                secrets: dict = {}
+                if os.path.exists(secrets_path):
+                    try:
+                        with open(secrets_path, 'r', encoding='utf-8') as sf:
+                            secrets = yaml.safe_load(sf) or {}
+                        logger.info("Loaded secrets from %s", secrets_path)
+                    except Exception as se:
+                        logger.warning("Could not load secrets file %s: %s", secrets_path, se)
+
+                # precedence: CLI args > secrets file > config
+                username = args.username or secrets.get('sap_credentials', {}).get('username') or config.get('sap', {}).get('username')
+                password = args.password or secrets.get('sap_credentials', {}).get('password') or config.get('sap', {}).get('password')
+                client_mandt = args.client or secrets.get('sap_credentials', {}).get('client') or config.get('sap', {}).get('client')
+                creds = {"username": username, "password": password, "client": client_mandt}
+
+            connection_string = args.connection_string or config.get('sap', {}).get('connection_string')
 
             sap_conn = SAPConnection(connection_index=args.connection_index,
                                      session_index=args.session_index,
-                                     connection_mode=args.connection_mode,
-                                     connection_string=args.connection_string,
+                                     connection_mode=conn_mode,
+                                     connection_string=connection_string,
                                      credentials=creds)
             session = sap_conn.connect()
         except Exception as e:
             logger.warning("Could not obtain SAP session (%s). Falling back to simulate. Error: %s", args.connection_mode, e)
             args.simulate = True
 
-    exporter = MultiClientExporterV2(session=session, config={}, simulate=args.simulate)
+    exporter = MultiClientExporterV2(session=session, config=config, simulate=args.simulate)
     results = exporter.run(clients, filters)
 
     summary = {"generated_at": datetime.now().isoformat(), "results": results}
