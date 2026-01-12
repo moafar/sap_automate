@@ -1,4 +1,4 @@
-pywin32
+# pywin32
 pyyaml
 python-dotenv
 keyring
