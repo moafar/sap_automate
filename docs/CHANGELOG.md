@@ -6,10 +6,17 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ---
+## v1.1.1
+### Fixed (2025-12-29)
+- Ajuste en requirements.txt para indicar que pywin32 solo se instale en Windows
+- Ajuste en configuración de proyecto en mkdocs
+- Cambio de nombre archivo de control de versiones (VERSION -> vX.X.X)
+- Remuevo emoticons de la documentacion
+---
 
 ## v1.1.0 (2025-12-05)
 
-### ✨ Added
+### Added
 - Script `export_multi_client.py` para exportar facturas de múltiples clientes
 - Soporte para lectura de lista de clientes desde archivo de texto
 - Función `read_client_list()` para parsear archivos de clientes con comentarios
@@ -17,13 +24,13 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 - Sistema de control de versiones con `VERSION.txt` y `CHANGELOG.md`
 - Guía completa de versionado en documentación
 
-### 🔄 Changed
+### Changed
 - Formato de exportación de Excel (XLSX) a CSV en configuración
 - Aumentado tiempo de espera tras ejecutar transacción de 0.5s a 2.0s
 - Mejorado manejo de errores en diálogo de exportación con fallback a formato por defecto
 - Actualizado método `_handle_export_dialog()` con manejo robusto de errores
 
-### 🐛 Fixed
+### Fixed
 - Error "The method got an invalid argument" en exportación CSV
 - Error "The control could not be found by id" por tiempo de espera insuficiente
 - Manejo graceful cuando el combo de formato de exportación no está disponible
@@ -32,7 +39,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## v1.0.0 (2025-11-27)
 
-### ✨ Added
+### Added
 - Sistema de conexión SAP con dos modos: `existing_session` y `credentials`
 - Gestión segura de credenciales con `credential_manager`
 - Script `export_invoice.py` para exportar facturas individuales
@@ -48,7 +55,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 - Inspector SAP para explorar interfaces
 - Configuración centralizada en `config/settings.yaml`
 
-### 🏗️ Infrastructure
+### Infrastructure
 - Estructura de proyecto modular por capas:
   - `src/core/` - Conexión y utilidades SAP
   - `src/scripts/` - Scripts de automatización
@@ -61,10 +68,10 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## Categorías de Cambios
 
-- ✨ **Added**: Nuevas funcionalidades
-- 🔄 **Changed**: Cambios en funcionalidades existentes
-- 🗑️ **Deprecated**: Funcionalidades que serán eliminadas próximamente
-- ❌ **Removed**: Funcionalidades eliminadas
-- 🐛 **Fixed**: Correcciones de bugs
-- 🔒 **Security**: Cambios relacionados con seguridad
-- 🏗️ **Infrastructure**: Cambios en estructura o configuración del proyecto
+- **Added**: Nuevas funcionalidades
+- **Changed**: Cambios en funcionalidades existentes
+- **Deprecated**: Funcionalidades que serán eliminadas próximamente
+- **Removed**: Funcionalidades eliminadas
+- **Fixed**: Correcciones de bugs
+- **Security**: Cambios relacionados con seguridad
+- **Infrastructure**: Cambios en estructura o configuración del proyecto
