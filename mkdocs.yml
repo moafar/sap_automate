@@ -1,7 +1,7 @@
-site_name: SAP Automation - Documentación Técnica
+site_name: SAP IDI Automation - Documentación Técnica
 site_description: Documentación del sistema de automatización SAP con login automático
-site_author: Equipo de Desarrollo
-repo_url: https://github.com/tu-org/sap-automation
+site_author: Rafael Ortiz - DRE
+repo_url: https://github.com/moafar/sap_automate
 edit_uri: ""
 
 theme:
