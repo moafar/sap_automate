@@ -1,5 +1,6 @@
 import logging
 import os
+import sys
 import yaml
 
 def setup_logger(config_path="config/settings.yaml"):
@@ -28,12 +29,14 @@ def setup_logger(config_path="config/settings.yaml"):
     if log_dir and not os.path.exists(log_dir):
         os.makedirs(log_dir, exist_ok=True)
 
+    # Force UTF-8 on console to avoid UnicodeEncodeError with cp1252 on Windows
+    console_handler = logging.StreamHandler(stream=open(sys.stdout.fileno(), mode='w', encoding='utf-8', closefd=False))
     logging.basicConfig(
         level=log_level,
         format=log_format,
         handlers=[
-            logging.FileHandler(log_file),
-            logging.StreamHandler()
+            logging.FileHandler(log_file, encoding='utf-8'),
+            console_handler
         ]
     )
 

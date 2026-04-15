@@ -1,0 +1,1679 @@
+{
+  "type": "GuiMainWindow",
+  "id": "/app/con[0]/ses[0]/wnd[0]",
+  "name": "wnd[0]",
+  "text": "Visualitzar cst.reals partd.indv.p.ctr.costos",
+  "is_alv": false,
+  "is_button": false,
+  "is_textfield": false,
+  "children": [
+    {
+      "type": "GuiMenubar",
+      "id": "/app/con[0]/ses[0]/wnd[0]/mbar",
+      "name": "mbar",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]",
+          "name": "Llista",
+          "text": "Llista",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[0]",
+              "name": "Presentació preliminar",
+              "text": "Presentació preliminar",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[1]",
+              "name": "Imprimir",
+              "text": "Imprimir",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[2]",
+              "name": "menu[2]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[3]",
+              "name": "Exportar",
+              "text": "Exportar",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[3]/menu[0]",
+                  "name": "Processament de textos...",
+                  "text": "Processament de textos...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[3]/menu[1]",
+                  "name": "Full de càlcul...",
+                  "text": "Full de càlcul...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[3]/menu[2]",
+                  "name": "Fitxer local...",
+                  "text": "Fitxer local...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[4]",
+              "name": "Enviar a",
+              "text": "Enviar a",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[4]/menu[0]",
+                  "name": "Destinatari de correu electrònic",
+                  "text": "Destinatari de correu electrònic",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[4]/menu[1]",
+                  "name": "Carpeta",
+                  "text": "Carpeta",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[5]",
+              "name": "menu[5]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[0]/menu[6]",
+              "name": "Finalitzar",
+              "text": "Finalitzar",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]",
+          "name": "Tractar",
+          "text": "Tractar",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[0]",
+              "name": "menu[0]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[1]",
+              "name": "Fixar filtre",
+              "text": "Fixar filtre",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[2]",
+              "name": "Suprimir filtre",
+              "text": "Suprimir filtre",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[3]",
+              "name": "menu[3]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[4]",
+              "name": "Classificar en sentit ascendent",
+              "text": "Classificar en sentit ascendent",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[5]",
+              "name": "Classificar en sentit descendent",
+              "text": "Classificar en sentit descendent",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[6]",
+              "name": "menu[6]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[7]",
+              "name": "Calcular",
+              "text": "Calcular",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[7]/menu[0]",
+                  "name": "Total",
+                  "text": "Total",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[7]/menu[1]",
+                  "name": "Valor mitjà",
+                  "text": "Valor mitjà",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[7]/menu[2]",
+                  "name": "Mínim",
+                  "text": "Mínim",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[7]/menu[3]",
+                  "name": "Màxim",
+                  "text": "Màxim",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[8]",
+              "name": "Subtotals...",
+              "text": "Subtotals...",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[9]",
+              "name": "menu[9]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[10]",
+              "name": "Cercar",
+              "text": "Cercar",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[11]",
+              "name": "menu[11]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[1]/menu[12]",
+              "name": "Cancel·lar",
+              "text": "Cancel·lar",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]",
+          "name": "Passar a",
+          "text": "Passar a",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[0]",
+              "name": "Anàlisi ABC",
+              "text": "Anàlisi ABC",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[1]",
+              "name": "menu[1]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[2]",
+              "name": "Missatges...",
+              "text": "Missatges...",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[3]",
+              "name": "menu[3]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[2]/menu[4]",
+              "name": "Endarrere",
+              "text": "Endarrere",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]",
+          "name": "Opcions",
+          "text": "Opcions",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]",
+              "name": "Disposició",
+              "text": "Disposició",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[0]",
+                  "name": "Modificar...",
+                  "text": "Modificar...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[1]",
+                  "name": "Línies de capçalera actuals",
+                  "text": "Línies de capçalera actuals",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[2]",
+                  "name": "Seleccionar...",
+                  "text": "Seleccionar...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[3]",
+                  "name": "menu[3]",
+                  "text": "",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[4]",
+                  "name": "Desar...",
+                  "text": "Desar...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[5]",
+                  "name": "menu[5]",
+                  "text": "",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[0]/menu[6]",
+                  "name": "Gestionar...",
+                  "text": "Gestionar...",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[1]",
+              "name": "Columnes",
+              "text": "Columnes",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[1]/menu[0]",
+                  "name": "Amplada òptima",
+                  "text": "Amplada òptima",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[1]/menu[1]",
+                  "name": "menu[1]",
+                  "text": "",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[1]/menu[2]",
+                  "name": "Fixar fins a columna",
+                  "text": "Fixar fins a columna",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[3]/menu[1]/menu[3]",
+                  "name": "Anul·lar fixació",
+                  "text": "Anul·lar fixació",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]",
+          "name": "Detalls",
+          "text": "Detalls",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[0]",
+              "name": "Selecció",
+              "text": "Selecció",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[0]/menu[0]",
+                  "name": "Log",
+                  "text": "Log",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[0]/menu[1]",
+                  "name": "Criteris",
+                  "text": "Criteris",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[1]",
+              "name": "menu[1]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[2]",
+              "name": "Registrar traspàs",
+              "text": "Registrar traspàs",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[3]",
+              "name": "Sol·licitud de correcció",
+              "text": "Sol·licitud de correcció",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[4]",
+              "name": "menu[4]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[4]/menu[5]",
+              "name": "Visualitzar societat CO",
+              "text": "Visualitzar societat CO",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]",
+          "name": "Entorn",
+          "text": "Entorn",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]/menu[0]",
+              "name": "Visualitzar registre mestre",
+              "text": "Visualitzar registre mestre",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]/menu[1]",
+              "name": "menu[1]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]/menu[2]",
+              "name": "Document original",
+              "text": "Document original",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]/menu[3]",
+              "name": "Documents financers",
+              "text": "Documents financers",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]/menu[4]",
+              "name": "Relationship Browser",
+              "text": "Relationship Browser",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[5]/menu[5]",
+              "name": "Document CO",
+              "text": "Document CO",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]",
+          "name": "Sistema",
+          "text": "Sistema",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[0]",
+              "name": "Nova finestra GUI",
+              "text": "Nova finestra GUI",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[1]",
+              "name": "Tancar finestra GUI",
+              "text": "Tancar finestra GUI",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[2]",
+              "name": "Valors prefixats",
+              "text": "Valors prefixats",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[2]/menu[0]",
+                  "name": "Retenir dades",
+                  "text": "Retenir dades",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[2]/menu[1]",
+                  "name": "Fixar dades",
+                  "text": "Fixar dades",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[2]/menu[2]",
+                  "name": "Suprimir dades",
+                  "text": "Suprimir dades",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[2]/menu[3]",
+                  "name": "Dades d'usuari",
+                  "text": "Dades d'usuari",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[2]/menu[4]",
+                  "name": "Ampliar llista de preferits",
+                  "text": "Ampliar llista de preferits",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]",
+              "name": "Serveis",
+              "text": "Serveis",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[0]",
+                  "name": "Reporting",
+                  "text": "Reporting",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[1]",
+                  "name": "Quick Viewer",
+                  "text": "Quick Viewer",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[2]",
+                  "name": "Control de sortida",
+                  "text": "Control de sortida",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[3]",
+                  "name": "Actualització de taules",
+                  "text": "Actualització de taules",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[3]/menu[0]",
+                      "name": "Actual.ampl.taules",
+                      "text": "Actual.ampl.taules",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[3]/menu[1]",
+                      "name": "Actualització clúster de vistes",
+                      "text": "Actualització clúster de vistes",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]",
+                  "name": "Batch input",
+                  "text": "Batch input",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[0]",
+                      "name": "Carpetes",
+                      "text": "Carpetes",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[1]",
+                      "name": "Logs",
+                      "text": "Logs",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[2]",
+                      "name": "SAP tutor gravar",
+                      "text": "SAP tutor gravar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[3]",
+                      "name": "Reiniciar transacció",
+                      "text": "Reiniciar transacció",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[4]",
+                      "name": "Suprimir transacció",
+                      "text": "Suprimir transacció",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[5]",
+                      "name": "Seg.transacció",
+                      "text": "Seg.transacció",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[6]",
+                      "name": "Executar visible",
+                      "text": "Executar visible",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[7]",
+                      "name": "Visualitzar només errors",
+                      "text": "Visualitzar només errors",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[8]",
+                      "name": "Mode expert ON",
+                      "text": "Mode expert ON",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[9]",
+                      "name": "Mode expert OFF",
+                      "text": "Mode expert OFF",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[4]/menu[10]",
+                      "name": "Cancel·lar",
+                      "text": "Cancel·lar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[5]",
+                  "name": "Entrada rápida",
+                  "text": "Entrada rápida",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[5]/menu[0]",
+                      "name": "SAP tutor gravar",
+                      "text": "SAP tutor gravar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[5]/menu[1]",
+                      "name": "Executar visible",
+                      "text": "Executar visible",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[5]/menu[2]",
+                      "name": "Visualitzar només errors",
+                      "text": "Visualitzar només errors",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[5]/menu[3]",
+                      "name": "Cancel·lar",
+                      "text": "Cancel·lar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[6]",
+                  "name": "Entrada directa",
+                  "text": "Entrada directa",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[7]",
+                  "name": "Jobs",
+                  "text": "Jobs",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[7]/menu[0]",
+                      "name": "Definició job",
+                      "text": "Definició job",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[7]/menu[1]",
+                      "name": "Resum jobs",
+                      "text": "Resum jobs",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[3]/menu[8]",
+                  "name": "Cua",
+                  "text": "Cua",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]",
+              "name": "Utilitats",
+              "text": "Utilitats",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[0]",
+                  "name": "Debugging dynpro",
+                  "text": "Debugging dynpro",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[1]",
+                  "name": "Depuració ABAP",
+                  "text": "Depuració ABAP",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[2]",
+                  "name": "Debugging sistema",
+                  "text": "Debugging sistema",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[3]",
+                  "name": "Consum de recursos",
+                  "text": "Consum de recursos",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[4]",
+                  "name": "Cua automàtica processament sincronitzat",
+                  "text": "Cua automàtica processament sincronitzat",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[5]",
+                  "name": "Trace de rendiment",
+                  "text": "Trace de rendiment",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[6]",
+                  "name": "Trace context",
+                  "text": "Trace context",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[7]",
+                  "name": "Anàlisi del temps d'execució",
+                  "text": "Anàlisi del temps d'execució",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[7]/menu[0]",
+                      "name": "Executar",
+                      "text": "Executar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[7]/menu[1]",
+                      "name": "Activar",
+                      "text": "Activar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[7]/menu[2]",
+                      "name": "Desactivar",
+                      "text": "Desactivar",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[8]",
+                  "name": "Visual.verif.autoritz.",
+                  "text": "Visual.verif.autoritz.",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[9]",
+                  "name": "Anàlisi de memòria",
+                  "text": "Anàlisi de memòria",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[9]/menu[0]",
+                      "name": "Crear instantània de memòria",
+                      "text": "Crear instantània de memòria",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    },
+                    {
+                      "type": "GuiMenu",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[4]/menu[9]/menu[1]",
+                      "name": "Comparar instantànies de memòria",
+                      "text": "Comparar instantànies de memòria",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[5]",
+              "name": "Serveis per a l'objecte",
+              "text": "Serveis per a l'objecte",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[6]",
+              "name": "Els meus objectes",
+              "text": "Els meus objectes",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[6]/menu[0]",
+                  "name": "Historial de l'objecte",
+                  "text": "Historial de l'objecte",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                },
+                {
+                  "type": "GuiMenu",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[6]/menu[1]",
+                  "name": "Tractar objectes",
+                  "text": "Tractar objectes",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[7]",
+              "name": "Ordres SPOOL pròpies",
+              "text": "Ordres SPOOL pròpies",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[8]",
+              "name": "Jobs propis",
+              "text": "Jobs propis",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[9]",
+              "name": "Missatge breu",
+              "text": "Missatge breu",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[10]",
+              "name": "Estat...",
+              "text": "Estat...",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[6]/menu[11]",
+              "name": "Sortir del sistema",
+              "text": "Sortir del sistema",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": "GuiMenu",
+          "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]",
+          "name": "Ajuda",
+          "text": "Ajuda",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[0]",
+              "name": "Assistència de producte",
+              "text": "Assistència de producte",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[1]",
+              "name": "SAP Help Portal",
+              "text": "SAP Help Portal",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[2]",
+              "name": "menu[2]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[3]",
+              "name": "SAP Support Portal",
+              "text": "SAP Support Portal",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[4]",
+              "name": "Registrar missatge suport",
+              "text": "Registrar missatge suport",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[5]",
+              "name": "menu[5]",
+              "text": "",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            },
+            {
+              "type": "GuiMenu",
+              "id": "/app/con[0]/ses[0]/wnd[0]/mbar/menu[7]/menu[6]",
+              "name": "Opcions...",
+              "text": "Opcions...",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "GuiToolbar",
+      "id": "/app/con[0]/ses[0]/wnd[0]/tbar[0]",
+      "name": "tbar[0]",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiOkCodeField",
+          "id": "/app/con[0]/ses[0]/wnd[0]/tbar[0]/okcd",
+          "name": "okcd",
+          "text": "",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "GuiTitlebar",
+      "id": "/app/con[0]/ses[0]/wnd[0]/titl",
+      "name": "titl",
+      "text": "Visualitzar cst.reals partd.indv.p.ctr.costos",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": []
+    },
+    {
+      "type": "GuiToolbar",
+      "id": "/app/con[0]/ses[0]/wnd[0]/tbar[1]",
+      "name": "tbar[1]",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiButton",
+          "id": "/app/con[0]/ses[0]/wnd[0]/tbar[1]/btnvhmore",
+          "name": "btnvhmore",
+          "text": "Més",
+          "is_alv": false,
+          "is_button": true,
+          "is_textfield": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "GuiUserArea",
+      "id": "/app/con[0]/ses[0]/wnd[0]/usr",
+      "name": "usr",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiCustomControl",
+          "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1",
+          "name": "GRID1",
+          "text": "",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiContainerShell",
+              "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont",
+              "name": "shellcont",
+              "text": "SAPGUI.CONTAINERCTRL.1",
+              "is_alv": false,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiSplitterShell",
+                  "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell",
+                  "name": "shell",
+                  "text": "SAPGUI.SplitterCtrl.1",
+                  "is_alv": false,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiContainerShell",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[0]",
+                      "name": "shellcont[0]",
+                      "text": "SAPGUI.CONTAINERCTRL.1",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": [
+                        {
+                          "type": "GuiShell",
+                          "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[0]/shell",
+                          "name": "shell",
+                          "text": "SAP.HTMLControl.1",
+                          "is_alv": false,
+                          "is_button": false,
+                          "is_textfield": false,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "GuiContainerShell",
+                      "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]",
+                      "name": "shellcont[1]",
+                      "text": "SAPGUI.CONTAINERCTRL.1",
+                      "is_alv": false,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": [
+                        {
+                          "type": "GuiSplitterShell",
+                          "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell",
+                          "name": "shell",
+                          "text": "SAPGUI.SplitterCtrl.1",
+                          "is_alv": false,
+                          "is_button": false,
+                          "is_textfield": false,
+                          "children": [
+                            {
+                              "type": "GuiContainerShell",
+                              "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell/shellcont[0]",
+                              "name": "shellcont[0]",
+                              "text": "SAPGUI.CONTAINERCTRL.1",
+                              "is_alv": false,
+                              "is_button": false,
+                              "is_textfield": false,
+                              "children": []
+                            },
+                            {
+                              "type": "GuiContainerShell",
+                              "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell/shellcont[1]",
+                              "name": "shellcont[1]",
+                              "text": "SAPGUI.CONTAINERCTRL.1",
+                              "is_alv": false,
+                              "is_button": false,
+                              "is_textfield": false,
+                              "children": [
+                                {
+                                  "type": "GuiShell",
+                                  "id": "/app/con[0]/ses[0]/wnd[0]/usr/cntlGRID1/shellcont/shell/shellcont[1]/shell/shellcont[1]/shell",
+                                  "name": "shell",
+                                  "text": "SAPGUI.GridViewCtrl.1",
+                                  "is_alv": true,
+                                  "is_button": false,
+                                  "is_textfield": false,
+                                  "children": [],
+                                  "row_count": 52588,
+                                  "column_count": 8
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "GuiStatusbar",
+      "id": "/app/con[0]/ses[0]/wnd[0]/sbar",
+      "name": "sbar",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[0]",
+          "name": "pane[0]",
+          "text": "",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[1]",
+          "name": "pane[1]",
+          "text": "ESX (1) 300",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[2]",
+          "name": "pane[2]",
+          "text": "",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[3]",
+          "name": "pane[3]",
+          "text": "OVR",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[4]",
+          "name": "pane[4]",
+          "text": "                    ",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[5]",
+          "name": "pane[5]",
+          "text": " SERVER ",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiStatusPane",
+          "id": "/app/con[0]/ses[0]/wnd[0]/sbar/pane[6]",
+          "name": "pane[6]",
+          "text": "KANA",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

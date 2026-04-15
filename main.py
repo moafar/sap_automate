@@ -18,12 +18,11 @@ def main():
     # Parse Args
     parser = argparse.ArgumentParser(description="SAP Automation Scripts")
     parser.add_argument("--task", type=str, required=True, 
-                        choices=["export_invoice", "export_multi_client"], 
+                        choices=["export_invoice", "export_multi_client", "segec_gr55"], 
                         help="Task to run")
     
     # Export Invoice arguments
     parser.add_argument("--invoice", type=str, help="Invoice number for export task")
-    
     # Export Multi-Client arguments
     parser.add_argument("--clients-file", type=str, 
                         help="Path to file with client codes (one per line)")
@@ -35,6 +34,7 @@ def main():
                         help="Billing year (default: 2025)")
     parser.add_argument("--status", type=str, default="F", 
                         help="Billing status (default: F)")
+    # SegecGR55 no requiere argumentos adicionales para la prueba de humo
     args = parser.parse_args()
 
     # Load Config
@@ -103,7 +103,6 @@ def main():
         if not args.invoice:
             logger.error("Invoice number is required for export_invoice task.")
             sys.exit(1)
-        
         exporter = InvoiceExporter(session, config)
         success = exporter.run(args.invoice)
         if success:
@@ -111,25 +110,20 @@ def main():
         else:
             logger.error("Task failed.")
             sys.exit(1)
-    
     elif args.task == "export_multi_client":
         if not args.clients_file:
             logger.error("Client list file is required for export_multi_client task.")
             logger.error("Usage: --task export_multi_client --clients-file config/clients.txt")
             sys.exit(1)
-        
         # Import the helper function
         from src.scripts.export_multi_client import read_client_list
-        
         # Read client list from file
         try:
             client_list = read_client_list(args.clients_file)
         except (FileNotFoundError, ValueError) as e:
             logger.error(f"Error reading client list: {e}")
             sys.exit(1)
-        
         logger.info(f"Processing {len(client_list)} clients from {args.clients_file}")
-        
         # Create exporter and run
         exporter = MultiClientExporter(session, config)
         results = exporter.run(
@@ -139,13 +133,21 @@ def main():
             year=args.year,
             status=args.status
         )
-        
         # Check overall success
         failed_clients = [k for k, v in results.items() if not v["success"]]
         if not failed_clients:
             logger.info("All clients exported successfully.")
         else:
             logger.warning(f"Some clients failed: {failed_clients}")
+            sys.exit(1)
+    elif args.task == "segec_gr55":
+        from src.scripts.segec_gr55 import SegecGR55Full
+        launcher = SegecGR55Full(session, config)
+        success = launcher.run()
+        if success:
+            logger.info("SEGEC GR55 completado correctamente (Seguimiento Económico)")
+        else:
+            logger.error("Error en SEGEC GR55")
             sys.exit(1)
 
     # Cleanup (disconnect if using credentials mode)

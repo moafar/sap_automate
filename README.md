@@ -48,10 +48,10 @@ scripts_SAP/
 2. **Crear entorno virtual** (recomendado)
    ```powershell
    # Crear venv
-   python -m venv venv
+   python -m venv .venv
    
    # Activar venv
-   .\venv\Scripts\Activate.ps1
+   .\.venv\Scripts\Activate.ps1
    
    # Si da error de permisos, ejecutar una vez:
    # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -73,6 +73,9 @@ scripts_SAP/
    # No requiere configuración adicional
    #    connection_string: "Nombre Sistema SAP"  # Como aparece en SAP Logon
    ```
+
+   **Modo B: Credentials** 
+   
    
    📖 **Guía completa**: Ver [docs/LOGIN_AUTOMATICO.md](docs/LOGIN_AUTOMATICO.md)
 

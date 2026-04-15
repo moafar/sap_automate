@@ -1,0 +1,280 @@
+{
+  "type": "GuiModalWindow",
+  "id": "/app/con[0]/ses[0]/wnd[1]",
+  "name": "wnd[1]",
+  "text": "Modificar disposició",
+  "is_alv": false,
+  "is_button": false,
+  "is_textfield": false,
+  "children": [
+    {
+      "type": "GuiToolbar",
+      "id": "/app/con[0]/ses[0]/wnd[1]/tbar[0]",
+      "name": "tbar[0]",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiButton",
+          "id": "/app/con[0]/ses[0]/wnd[1]/tbar[0]/btn[0]",
+          "name": "btn[0]",
+          "text": "",
+          "is_alv": false,
+          "is_button": true,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiButton",
+          "id": "/app/con[0]/ses[0]/wnd[1]/tbar[0]/btn[36]",
+          "name": "btn[36]",
+          "text": "",
+          "is_alv": false,
+          "is_button": true,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiButton",
+          "id": "/app/con[0]/ses[0]/wnd[1]/tbar[0]/btn[35]",
+          "name": "btn[35]",
+          "text": "Desar com...",
+          "is_alv": false,
+          "is_button": true,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiButton",
+          "id": "/app/con[0]/ses[0]/wnd[1]/tbar[0]/btn[12]",
+          "name": "btn[12]",
+          "text": "",
+          "is_alv": false,
+          "is_button": true,
+          "is_textfield": false,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "GuiUserArea",
+      "id": "/app/con[0]/ses[0]/wnd[1]/usr",
+      "name": "usr",
+      "text": "",
+      "is_alv": false,
+      "is_button": false,
+      "is_textfield": false,
+      "children": [
+        {
+          "type": "GuiLabel",
+          "id": "/app/con[0]/ses[0]/wnd[1]/usr/lblLAYOUT",
+          "name": "LAYOUT",
+          "text": "Disp.actual",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": false,
+          "children": []
+        },
+        {
+          "type": "GuiTextField",
+          "id": "/app/con[0]/ses[0]/wnd[1]/usr/txtGS_SCREEN-LAYOUT_TITLE",
+          "name": "GS_SCREEN-LAYOUT_TITLE",
+          "text": "1SAP ( Comptabilització costos primaris )",
+          "is_alv": false,
+          "is_button": false,
+          "is_textfield": true,
+          "children": []
+        },
+        {
+          "type": "GuiTabStrip",
+          "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV",
+          "name": "G_TS_ALV",
+          "text": "",
+          "is_alv": true,
+          "is_button": false,
+          "is_textfield": false,
+          "children": [
+            {
+              "type": "GuiTab",
+              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1",
+              "name": "ALV_M_R1",
+              "text": "Selecció columna",
+              "is_alv": true,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [
+                {
+                  "type": "GuiScrollContainer",
+                  "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620",
+                  "name": "SUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620",
+                  "text": "",
+                  "is_alv": true,
+                  "is_button": false,
+                  "is_textfield": false,
+                  "children": [
+                    {
+                      "type": "GuiButton",
+                      "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/btnAPP_FL_SING",
+                      "name": "APP_FL_SING",
+                      "text": "",
+                      "is_alv": true,
+                      "is_button": true,
+                      "is_textfield": false,
+                      "children": [],
+                      "row_count": null,
+                      "column_count": null
+                    },
+                    {
+                      "type": "GuiButton",
+                      "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/btnAPP_WL_SING",
+                      "name": "APP_WL_SING",
+                      "text": "",
+                      "is_alv": true,
+                      "is_button": true,
+                      "is_textfield": false,
+                      "children": [],
+                      "row_count": null,
+                      "column_count": null
+                    },
+                    {
+                      "type": "GuiCustomControl",
+                      "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/cntlCONTAINER2_LAYO",
+                      "name": "CONTAINER2_LAYO",
+                      "text": "",
+                      "is_alv": true,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": [
+                        {
+                          "type": "GuiContainerShell",
+                          "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/cntlCONTAINER2_LAYO/shellcont",
+                          "name": "shellcont",
+                          "text": "SAPGUI.CONTAINERCTRL.1",
+                          "is_alv": true,
+                          "is_button": false,
+                          "is_textfield": false,
+                          "children": [
+                            {
+                              "type": "GuiShell",
+                              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/cntlCONTAINER2_LAYO/shellcont/shell",
+                              "name": "shell",
+                              "text": "SAPGUI.GridViewCtrl.1",
+                              "is_alv": true,
+                              "is_button": false,
+                              "is_textfield": false,
+                              "children": [],
+                              "row_count": 8,
+                              "column_count": 2
+                            }
+                          ],
+                          "row_count": null,
+                          "column_count": null
+                        }
+                      ],
+                      "row_count": null,
+                      "column_count": null
+                    },
+                    {
+                      "type": "GuiCustomControl",
+                      "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/cntlCONTAINER1_LAYO",
+                      "name": "CONTAINER1_LAYO",
+                      "text": "",
+                      "is_alv": true,
+                      "is_button": false,
+                      "is_textfield": false,
+                      "children": [
+                        {
+                          "type": "GuiContainerShell",
+                          "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/cntlCONTAINER1_LAYO/shellcont",
+                          "name": "shellcont",
+                          "text": "SAPGUI.CONTAINERCTRL.1",
+                          "is_alv": true,
+                          "is_button": false,
+                          "is_textfield": false,
+                          "children": [
+                            {
+                              "type": "GuiShell",
+                              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R1/ssubSUB_CONFIGURATION:SAPLSALV_CUL_COLUMN_SELECTION:0620/cntlCONTAINER1_LAYO/shellcont/shell",
+                              "name": "shell",
+                              "text": "SAPGUI.GridViewCtrl.1",
+                              "is_alv": true,
+                              "is_button": false,
+                              "is_textfield": false,
+                              "children": [],
+                              "row_count": 67,
+                              "column_count": 1
+                            }
+                          ],
+                          "row_count": null,
+                          "column_count": null
+                        }
+                      ],
+                      "row_count": null,
+                      "column_count": null
+                    }
+                  ],
+                  "row_count": null,
+                  "column_count": null
+                }
+              ],
+              "row_count": null,
+              "column_count": null
+            },
+            {
+              "type": "GuiTab",
+              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R2",
+              "name": "ALV_M_R2",
+              "text": "Classificació",
+              "is_alv": true,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [],
+              "row_count": null,
+              "column_count": null
+            },
+            {
+              "type": "GuiTab",
+              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R3",
+              "name": "ALV_M_R3",
+              "text": "Filtre",
+              "is_alv": true,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [],
+              "row_count": null,
+              "column_count": null
+            },
+            {
+              "type": "GuiTab",
+              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R4",
+              "name": "ALV_M_R4",
+              "text": "Visualitza",
+              "is_alv": true,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [],
+              "row_count": null,
+              "column_count": null
+            },
+            {
+              "type": "GuiTab",
+              "id": "/app/con[0]/ses[0]/wnd[1]/usr/tabsG_TS_ALV/tabpALV_M_R5",
+              "name": "ALV_M_R5",
+              "text": "Representació",
+              "is_alv": true,
+              "is_button": false,
+              "is_textfield": false,
+              "children": [],
+              "row_count": null,
+              "column_count": null
+            }
+          ],
+          "row_count": null,
+          "column_count": null
+        }
+      ]
+    }
+  ]
+}

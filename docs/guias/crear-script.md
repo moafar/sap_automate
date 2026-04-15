@@ -114,11 +114,30 @@ función run(mes, año):
 
 ## Paso 4: Implementar el Script
 
+
+### Estructura recomendada para scripts independientes
+
+Para scripts que requieren configuración propia y exploraciones, se recomienda la siguiente estructura:
+
+```
+src/scripts/mi_script/
+    mi_script_main.py      # Script principal ejecutable
+    mi_script.py           # Lógica de la automatización
+    config.yaml            # Configuración específica del script
+    exploracion_pantalla1.json  # (opcional) Archivos de exploración
+    exploracion_pantalla2.json  # (opcional)
+```
+
+Esto permite mantener cada automatización aislada, portable y fácil de mantener.
+
 ### Crear Archivo
 
 ```bash
-# Crear nuevo archivo en src/scripts/
-notepad src/scripts/reporte_ventas.py
+# Crear carpeta y archivos para el nuevo script
+mkdir src/scripts/mi_script
+notepad src/scripts/mi_script/mi_script.py
+notepad src/scripts/mi_script/mi_script_main.py
+notepad src/scripts/mi_script/config.yaml
 ```
 
 ### Código Base
@@ -349,15 +368,28 @@ elif args.task == "reporte_ventas":
 
 ## Paso 6: Probar el Script
 
+
 ### Ejecución de Prueba
 
 ```bash
 # Activar venv
 .\venv\Scripts\Activate.ps1
 
-# Ejecutar script
-python main.py --task reporte_ventas --mes 11 --anio 2025
+# Ejecutar el script desde cualquier ubicación:
+python src/scripts/mi_script/mi_script_main.py
+
+# O bien, si el script está preparado como módulo:
+python -m src.scripts.mi_script.mi_script_main
 ```
+
+> **Nota:** Si tu script necesita importar módulos del proyecto (por ejemplo, `from src.core.sap_connection import SAPConnection`), asegúrate de añadir dinámicamente la raíz del proyecto al `sys.path` al inicio de tu archivo principal:
+>
+> ```python
+> import sys, os
+> sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../')))
+> ```
+>
+> Así, el script funcionará correctamente sin importar desde dónde lo ejecutes.
 
 ### Verificación
 
