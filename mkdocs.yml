@@ -75,6 +75,7 @@ nav:
       - Arranque en Frío: guias/arranque-frio.md
       - Crear Nuevo Script: guias/crear-script.md
       - Control de Versiones: guias/versionado.md
+      - Verificar entorno: guias/verificar-entorno.md
   - Scripts:
       - Login Automático SAP: LOGIN_AUTOMATICO.md
       - Exportación Multi-Cliente: MULTI_CLIENT_EXPORT.md

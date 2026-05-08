@@ -6,6 +6,13 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ---
+
+## v1.1.2 (2026-05-08)
+
+### Added
+- Guía de verificación del entorno (`docs/guias/verificacion-entorno.md`)
+
+---
 ## v1.1.1
 ### Fixed (2025-12-29)
 - Ajuste en requirements.txt para indicar que pywin32 solo se instale en Windows
