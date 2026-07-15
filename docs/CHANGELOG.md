@@ -7,6 +7,17 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ---
 
+## v1.1.3 (2026-07-15)
+
+### Fixed
+- Corregida la exportación SEGEC GR55 cuando SAP reconstruye el cuadro de diálogo al cambiar el formato.
+- Renovada la referencia al control de destino antes de seleccionar la ubicación de exportación.
+
+### Changed
+- Actualizada la ruta de exportación SEGEC GR55 a `C:\sap_automate\exports`.
+- Validada la ejecución desatendida con login automático en SAP IDI ECO FIN.
+
+---
 ## v1.1.2 (2026-05-08)
 
 ### Added

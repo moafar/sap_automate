@@ -1,6 +1,6 @@
 # SAP Automation Scripts
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue)
+![Version](https://img.shields.io/badge/version-1.1.3-blue)
 ![Python](https://img.shields.io/badge/python-3.7+-green)
 
 Proyecto de automatización de procesos SAP GUI usando Python y win32com. Actualmente incluye funcionalidad de exportación de facturas con arquitectura modular preparada para futuras expansiones.
@@ -332,4 +332,4 @@ Proyecto interno - Uso privado
 Usuario Z1081401
 
 ---
-**Versión actual**: 1.1.0 | **Última actualización**: 2025-12-05
+**Versión actual**: 1.1.3 | **Última actualización**: 2026-07-15

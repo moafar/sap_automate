@@ -9,4 +9,4 @@ export:
   filename_prefix: "SEGEC_GR55"
   format: "csv-LEAN-STANDARD"   # csv-LEAN-STANDARD | xlsx-LEAN-STANDARD | 8-TT-STANDARD
   destination: "L"               # L = Local
-  directory: "C:\\Users\\Z1081401\\Desktop\\scripts_SAP\\exports"
+  directory: "C:\\sap_automate\\exports"

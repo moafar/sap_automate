@@ -327,6 +327,11 @@ class SegecGR55Full:
         dest = str(self.export_config.get('destination', 'L'))
         if dest not in dest_entries:
             raise RuntimeError(f"Key de destino '{dest}' no válido. Opciones: {dest_entries}")
+        
+            # El cambio de formato reconstruye el popup; recuperar el control de destino.
+        cmb_dest = self.session.findById(
+            f"{self._POPUP_EXPORT_BASE}/cmbGS_EXPORT-DESTINATION"
+        )
         current_dest = cmb_dest.Key.strip()
         if current_dest != dest:
             cmb_dest.Key = dest
