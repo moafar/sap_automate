@@ -1,0 +1,14 @@
+segec_gr55:
+  transaction: "/nGR55"
+  report_group: "Z002"
+  sociedad_co: "IDI"
+  ejercicio: 2026
+  periodo_de: 6
+  periodo_fins: 6
+  grupo_clases_costo: "co-6"
+
+export:
+  filename_prefix: "SEGEC_GR55"
+  format: "xlsx-LEAN-STANDARD"
+  destination: "L"
+  directory: "C:\\sap_automate\\exports"

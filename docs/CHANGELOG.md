@@ -7,6 +7,14 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ---
 
+## v1.1.4 (2026-08-03)
+
+### Changed
+- Refactor completo del script SEGEC GR55.  Nueva version: `segec_gr55_v2`
+- Exporta a XLSX
+- Cierra sesión SAP y libro Excel creado  
+
+---
 ## v1.1.3 (2026-07-15)
 
 ### Fixed
@@ -34,7 +42,7 @@ y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
 ## v1.1.1 (2026-01-09)
 
-### ✨ Added
+### Added
 - Script `export_multi_client_cli.py` para exportar facturas de múltiples clientes
 
 ## v1.1.0 (2025-12-05)
