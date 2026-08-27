@@ -72,6 +72,8 @@ class SapIds:
     SAVE_CONFIRM = "wnd[1]/tbar[0]/btn[11]"
     INFORMATION_CONFIRM = "wnd[1]/tbar[0]/btn[0]"
 
+    EXIT_CONFIRM_YES = "wnd[1]/usr/btnSPOP-OPTION1"
+
 
 class ZtsdFacturacionExtractor:
     """Coordina la extracción diaria de Facturació ALV."""
@@ -307,13 +309,20 @@ class ZtsdFacturacionExtractor:
             logger.warning("No fue posible cerrar Excel: %s", exc)
 
     def _close_sap_session(self) -> None:
-        """Cierra la sesión SAP utilizada mediante el comando /i."""
+        """Cierra la sesión SAP utilizada y confirma el diálogo de salida."""
         logger.info("Cerrando sesión SAP.")
         command = self._find(SapIds.MAIN_COMMAND)
         command.Text = "/i"
         self._send_key(0)
+
+        try:
+            self._wait_for_element(SapIds.EXIT_CONFIRM_YES, timeout=10).press()
+            logger.info("Confirmación de salida SAP aceptada.")
+        except TimeoutError:
+            logger.info("SAP no mostró diálogo de confirmación de salida.")
+
         time.sleep(2)
-        logger.info("Solicitud de cierre de sesión SAP enviada.")
+        logger.info("Sesión SAP cerrada.")
 
     def _dismiss_information_popup_if_present(self) -> None:
         try:
