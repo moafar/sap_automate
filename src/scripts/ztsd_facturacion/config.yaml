@@ -1,0 +1,11 @@
+ztsd_facturacion:
+  transaction: "/nZTSD_FACTURACION"
+  date_offset_days: 1
+  report_timeout: 300
+  poll_interval: 2
+
+export:
+  directory: "C:\\sap_automate\\exports"
+  filename_prefix: "ZTSD_FACTURACION"
+  extension: "xlsx"
+  run_id_length: 8
